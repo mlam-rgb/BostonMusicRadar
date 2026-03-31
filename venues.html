@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Venues · Boston Music Radar</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__boston">BOSTON</span>
+        <span class="brand__music">MUSIC</span>
+        <span class="brand__radar">RADAR</span>
+      </div>
+      <nav class="nav">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./events.html">Events</a>
+        <a class="nav__link is-active" href="./venues.html">Venues</a>
+        <a class="nav__link" href="./add-event.html">Add Event</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--primary" href="#">Log In</a>
+        <a class="btn btn--ghost" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:24px 0;">
+    <h1 style="margin:0 0 10px;">Venues</h1>
+    <p class="muted" style="margin:0 0 18px;">This is a placeholder page for the midterm. Next step: list venues and link to their upcoming events.</p>
+
+    <div class="day-group">
+      <div class="day-bar day-bar--dark"><span>Example Venues</span></div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin-bottom:6px;">The Paradise Rock Club</h3>
+          <div class="event__meta">Allston · Rock, Punk, Indie</div>
+          <a class="link" href="./events.html">See upcoming events</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__links">
+        <a href="./index.html">Home</a><span class="sep">|</span>
+        <a href="./events.html">Events</a><span class="sep">|</span>
+        <a href="./venues.html">Venues</a>
+      </div>
+      <div class="footer__copy">© 2026 Boston Music Radar</div>
+    </div>
+  </footer>
+</body>
+</html>
