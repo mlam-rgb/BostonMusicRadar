@@ -8,6 +8,16 @@
 </head>
 
 <body>
+  <!-- Announcement / Funding Model -->
+  <div class="announce">
+    <div class="container announce__inner">
+      <div class="announce__left">
+        Posting is free for verified bands and venues. Support the platform with publicity.
+      </div>
+      <a class="announce__cta" href="#">Advertise on Boston Music Radar</a>
+    </div>
+  </div>
+
   <!-- Top Nav -->
   <header class="topbar">
     <div class="container topbar__inner">
@@ -19,7 +29,7 @@
 
       <nav class="nav">
         <a class="nav__link is-active" href="#">Home</a>
-        <a class="nav__link" href="#">Upcoming Events</a>
+        <a class="nav__link" href="#">Events</a>
         <a class="nav__link" href="#">Venues</a>
         <a class="nav__link" href="#">Add Event</a>
       </nav>
@@ -34,12 +44,20 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
+
     <div class="container hero__inner">
-      <h1 class="hero__title">
-        FIND LIVE MUSIC IN <span class="accent">BOSTON TONIGHT!</span>
-      </h1>
+      <div class="hero__top">
+        <h1 class="hero__title">
+          FIND LIVE MUSIC IN <span class="accent">BOSTON</span>
+        </h1>
+        <div class="toggle">
+          <button class="toggle__btn is-active">This Week</button>
+          <button class="toggle__btn">Today</button>
+        </div>
+      </div>
+
       <p class="hero__sub">
-        Choose a genre to see what's happening this week, organized by date.
+        Pick a genre and see what’s happening next. No algorithm, no preferences. Just scenes.
       </p>
 
       <!-- Search -->
@@ -75,35 +93,38 @@
     <!-- Left column -->
     <section class="left">
       <div class="section-head">
-        <h2 class="section-title">Pick a Genre:</h2>
+        <h2 class="section-title">Genres</h2>
+        <span class="muted">Browse by scene</span>
       </div>
 
       <div class="genre-row">
-        <button class="pill is-active">Rock</button>
+        <button class="pill is-active">Punk</button>
+        <button class="pill">Rock</button>
         <button class="pill">Hip-Hop</button>
-        <button class="pill">Jazz</button>
-        <button class="pill">Pop</button>
-        <button class="pill">Electronic</button>
         <button class="pill">R&amp;B</button>
-        <button class="pill">Folk</button>
-        <button class="pill">Metal</button>
+        <button class="pill">Pop</button>
+        <button class="pill">Jazz</button>
+        <button class="pill">Electronic / EDM</button>
+        <button class="pill">Reggae</button>
+        <button class="pill">Country</button>
         <button class="pill">Latin</button>
-        <button class="pill pill--ghost">All Events</button>
+        <button class="pill pill--ghost">All</button>
       </div>
 
       <div class="section-head section-head--between">
-        <h2 class="section-title">Upcoming Shows</h2>
-        <span class="muted">First posted first</span>
+        <h2 class="section-title">This Week</h2>
+        <span class="muted">Events grouped by day. Inside each day: first post first.</span>
       </div>
 
       <!-- Day group -->
       <div class="day-group">
         <div class="day-bar">
           <span>Thursday, April 24</span>
+          <span class="day-bar__note">First post first</span>
         </div>
 
         <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=640&q=60" />
+          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
               <h3 class="event__title">The Ramblers</h3>
@@ -111,20 +132,22 @@
             </div>
             <div class="event__meta">
               <span>8:00 PM</span><span class="dot">•</span>
-              <span>The Paradise Rock Club</span>
+              <span>The Paradise Rock Club</span><span class="dot">•</span>
+              <span>Allston</span>
             </div>
             <div class="event__tags">
-              <span class="tag">Rock</span>
+              <span class="tag">Punk</span>
               <a class="link" href="#">Tickets</a>
+              <a class="link" href="#">Artist</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="#">View Event</a>
+            <a class="btn btn--primary btn--small" href="#">View</a>
           </div>
         </article>
 
         <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=640&q=60" />
+          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
               <h3 class="event__title">DJ Supreme</h3>
@@ -132,21 +155,23 @@
             </div>
             <div class="event__meta">
               <span>9:30 PM</span><span class="dot">•</span>
-              <span>Good Life</span>
+              <span>Good Life</span><span class="dot">•</span>
+              <span>Downtown</span>
               <span class="age">21+</span>
             </div>
             <div class="event__tags">
               <span class="tag">Hip-Hop</span>
               <a class="link" href="#">Tickets</a>
+              <a class="link" href="#">Artist</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="#">View Event</a>
+            <a class="btn btn--primary btn--small" href="#">View</a>
           </div>
         </article>
 
         <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=640&q=60" />
+          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
               <h3 class="event__title">Willow &amp; The Wolves</h3>
@@ -154,15 +179,17 @@
             </div>
             <div class="event__meta">
               <span>10:00 PM</span><span class="dot">•</span>
-              <span>Lizard Lounge</span>
+              <span>Lizard Lounge</span><span class="dot">•</span>
+              <span>Cambridge</span>
             </div>
             <div class="event__tags">
-              <span class="tag">Indie Rock</span>
+              <span class="tag">Rock</span>
               <span class="status status--soldout">Sold Out</span>
+              <a class="link" href="#">Artist</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="#">View Event</a>
+            <a class="btn btn--primary btn--small" href="#">View</a>
           </div>
         </article>
       </div>
@@ -171,54 +198,85 @@
       <div class="day-group">
         <div class="day-bar day-bar--dark">
           <span>Friday, April 25</span>
+          <span class="day-bar__note">First post first</span>
         </div>
+
+        <article class="event">
+          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=800&q=65" />
+          <div class="event__body">
+            <div class="event__title-row">
+              <h3 class="event__title">Neon Avenue</h3>
+              <span class="badge badge--verified">✔</span>
+            </div>
+            <div class="event__meta">
+              <span>7:30 PM</span><span class="dot">•</span>
+              <span>Brighton Music Hall</span><span class="dot">•</span>
+              <span>Allston</span>
+            </div>
+            <div class="event__tags">
+              <span class="tag">Pop</span>
+              <a class="link" href="#">Tickets</a>
+              <a class="link" href="#">Artist</a>
+            </div>
+          </div>
+          <div class="event__cta">
+            <a class="btn btn--primary btn--small" href="#">View</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- Right column -->
     <aside class="right">
-      <h3 class="aside-title">From Boston Businesses</h3>
+      <h3 class="aside-title">Sponsored</h3>
 
       <div class="ad-card">
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=60" />
+        <div class="ad-card__label">Sponsored</div>
+        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=70" />
         <div class="ad-card__body">
           <div class="ad-card__title">Tasty Bites Bistro</div>
-          <div class="ad-card__sub">Right next to The Paradise Rock Club</div>
-          <div class="ad-card__chip">Good food, great shows.</div>
+          <div class="ad-card__sub">Dinner before the show</div>
+          <div class="ad-card__chip">Restaurant</div>
           <a class="btn btn--dark btn--small" href="#">Visit Website</a>
         </div>
       </div>
 
       <div class="ad-card">
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=60" />
+        <div class="ad-card__label">Sponsored</div>
+        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=70" />
         <div class="ad-card__body">
           <div class="ad-card__title">Seaport Stay Hotel</div>
-          <div class="ad-card__sub">Minutes from Boston's best music venues</div>
-          <div class="ad-card__chip">Stay close to the music.</div>
-          <a class="btn btn--dark btn--small" href="#">Book Your Stay</a>
+          <div class="ad-card__sub">Stay close to Boston venues</div>
+          <div class="ad-card__chip">Hotel</div>
+          <a class="btn btn--dark btn--small" href="#">Book</a>
+        </div>
+      </div>
+
+      <div class="ad-card ad-card--cta">
+        <div class="ad-card__body">
+          <div class="ad-card__title">Bands and venues</div>
+          <div class="ad-card__sub">Posting is free with verification.</div>
+          <a class="btn btn--primary btn--small" href="#">Add Event</a>
+          <a class="btn btn--ghost-dark btn--small" href="#">Get Verified</a>
         </div>
       </div>
 
       <div class="follow">
         <div class="follow__label">Follow Boston Music Radar</div>
-
         <div class="social">
           <a class="social__btn" href="#" aria-label="Facebook">
-            <!-- Modern FB glyph -->
             <svg viewBox="0 0 24 24" class="social__svg" aria-hidden="true">
               <path d="M14 8.5V7.2c0-.7.5-1.2 1.2-1.2H17V3h-2.3C12.4 3 11 4.4 11 6.7v1.8H9v3h2V21h3v-9.5h2.6l.4-3H14z"/>
             </svg>
           </a>
 
           <a class="social__btn" href="#" aria-label="Instagram">
-            <!-- Modern IG outline -->
             <svg viewBox="0 0 24 24" class="social__svg" aria-hidden="true">
               <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm6.3-2.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
             </svg>
           </a>
 
           <a class="social__btn" href="#" aria-label="X">
-            <!-- Modern X -->
             <svg viewBox="0 0 24 24" class="social__svg" aria-hidden="true">
               <path d="M18.9 3H21l-6.7 7.7L22 21h-6.2l-4.9-6.4L5.3 21H3l7.2-8.3L2 3h6.3l4.4 5.8L18.9 3zm-2 16h1.7L7.1 4.9H5.3L16.9 19z"/>
             </svg>
@@ -237,18 +295,23 @@
         <span class="sep">|</span>
         <a href="#">For Businesses</a>
       </div>
-
-      <div class="footer__copy">
-        © 2026 Boston Music Radar. All rights reserved.
-      </div>
+      <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
   </footer>
 
   <script>
-    // Tiny demo-only interaction: highlight genre pills
+    // Demo-only interaction: highlight genre pills
     document.querySelectorAll('.pill').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.pill').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+      });
+    });
+
+    // Demo-only: toggle buttons in hero
+    document.querySelectorAll('.toggle__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.toggle__btn').forEach(b => b.classList.remove('is-active'));
         btn.classList.add('is-active');
       });
     });
