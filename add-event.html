@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Add Event · Boston Music Radar</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__boston">BOSTON</span>
+        <span class="brand__music">MUSIC</span>
+        <span class="brand__radar">RADAR</span>
+      </div>
+      <nav class="nav">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./events.html">Events</a>
+        <a class="nav__link" href="./venues.html">Venues</a>
+        <a class="nav__link is-active" href="./add-event.html">Add Event</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--primary" href="#">Log In</a>
+        <a class="btn btn--ghost" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:24px 0;">
+    <h1 style="margin:0 0 10px;">Add Event</h1>
+    <p class="muted" style="margin:0 0 18px;">Placeholder form for the midterm. In the real build this will be verified-only.</p>
+
+    <div class="event" style="grid-template-columns: 1fr;">
+      <div class="event__body" style="padding:14px;">
+        <label class="muted" style="display:block;margin-bottom:6px;">Event title</label>
+        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Band name / night name" />
+
+        <label class="muted" style="display:block;margin-bottom:6px;">Date & time</label>
+        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Fri, Apr 25 · 8:00 PM" />
+
+        <label class="muted" style="display:block;margin-bottom:6px;">Venue</label>
+        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Venue name + address" />
+
+        <label class="muted" style="display:block;margin-bottom:6px;">Ticket link</label>
+        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="https://..." />
+
+        <a class="btn btn--primary" href="#" onclick="alert('Demo only — posting will be verified-only.');return false;">Submit (demo)</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__links">
+        <a href="./index.html">Home</a><span class="sep">|</span>
+        <a href="./events.html">Events</a><span class="sep">|</span>
+        <a href="./venues.html">Venues</a>
+      </div>
+      <div class="footer__copy">© 2026 Boston Music Radar</div>
+    </div>
+  </footer>
+</body>
+</html>
