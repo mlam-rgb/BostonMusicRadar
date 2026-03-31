@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <div class="announce">
+    <div class="container announce__inner">
+      <div class="announce__left">
+        Venues and bands can post with verification. Keep it real. Keep it music.
+      </div>
+      <a class="announce__cta" href="./add-event.html">Get Verified</a>
+    </div>
+  </div>
+
   <header class="topbar">
     <div class="container topbar__inner">
       <div class="brand">
@@ -14,33 +23,198 @@
         <span class="brand__music">MUSIC</span>
         <span class="brand__radar">RADAR</span>
       </div>
+
       <nav class="nav">
         <a class="nav__link" href="./index.html">Home</a>
         <a class="nav__link" href="./events.html">Events</a>
         <a class="nav__link is-active" href="./venues.html">Venues</a>
         <a class="nav__link" href="./add-event.html">Add Event</a>
       </nav>
+
       <div class="nav__actions">
-        <a class="btn btn--primary" href="#">Log In</a>
-        <a class="btn btn--ghost" href="#">Sign Up</a>
+        <a class="btn btn--primary" href="./add-event.html">Log In</a>
+        <a class="btn btn--ghost" href="./add-event.html">Sign Up</a>
       </div>
     </div>
   </header>
 
   <main class="container" style="padding:24px 0;">
-    <h1 style="margin:0 0 10px;">Venues</h1>
-    <p class="muted" style="margin:0 0 18px;">This is a placeholder page for the midterm. Next step: list venues and link to their upcoming events.</p>
+    <h1 style="margin:0 0 8px;">Venues</h1>
+    <p class="muted" style="margin:0 0 18px;">
+      A curated list of Boston-area music venues. Next step: each venue links to its upcoming shows.
+    </p>
+
+    <!-- Filters (mock only) -->
+    <div class="genre-row" style="margin-bottom:14px;">
+      <button class="pill is-active" type="button">All</button>
+      <button class="pill" type="button">Rock</button>
+      <button class="pill" type="button">Punk</button>
+      <button class="pill" type="button">Hip-Hop</button>
+      <button class="pill" type="button">Jazz</button>
+      <button class="pill" type="button">Electronic</button>
+      <button class="pill" type="button">Latin</button>
+    </div>
 
     <div class="day-group">
-      <div class="day-bar day-bar--dark"><span>Example Venues</span></div>
+      <div class="day-bar day-bar--dark">
+        <span>Boston + Cambridge</span>
+        <span class="day-bar__note">Venue list (v1)</span>
+      </div>
+
+      <!-- Venue card template: using .event styles for consistency -->
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Paradise Rock Club</h3>
+          <div class="event__meta">Allston · 967 Commonwealth Ave, Boston, MA 02215</div>
+          <div class="event__tags">
+            <span class="tag">Rock</span><span class="tag">Punk</span><span class="tag">Indie</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
 
       <div class="event" style="grid-template-columns: 1fr;">
         <div class="event__body" style="padding:14px;">
-          <h3 class="event__title" style="margin-bottom:6px;">The Paradise Rock Club</h3>
-          <div class="event__meta">Allston · Rock, Punk, Indie</div>
-          <a class="link" href="./events.html">See upcoming events</a>
+          <h3 class="event__title" style="margin:0 0 6px;">Brighton Music Hall</h3>
+          <div class="event__meta">Allston · 158 Brighton Ave, Boston, MA 02134</div>
+          <div class="event__tags">
+            <span class="tag">Rock</span><span class="tag">Pop</span><span class="tag">Indie</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
         </div>
       </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Roadrunner</h3>
+          <div class="event__meta">Brighton · 89 Guest St, Boston, MA 02135</div>
+          <div class="event__tags">
+            <span class="tag">Rock</span><span class="tag">Pop</span><span class="tag">Indie</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Citizens House of Blues Boston</h3>
+          <div class="event__meta">Fenway · 15 Lansdowne St, Boston, MA 02215</div>
+          <div class="event__tags">
+            <span class="tag">Rock</span><span class="tag">Hip-Hop</span><span class="tag">R&amp;B</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Big Night Live</h3>
+          <div class="event__meta">West End / North Station · 110 Causeway St, Boston, MA</div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span><span class="tag">Hip-Hop</span><span class="tag">Pop</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Royale</h3>
+          <div class="event__meta">Theater District · 279 Tremont St, Boston, MA 02116</div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span><span class="tag">Pop</span><span class="tag">Hip-Hop</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">The Sinclair</h3>
+          <div class="event__meta">Harvard Square · 52 Church St, Cambridge, MA 02138</div>
+          <div class="event__tags">
+            <span class="tag">Indie</span><span class="tag">Rock</span><span class="tag">Folk</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Sonia (Middle East)</h3>
+          <div class="event__meta">Central Square · 10 Brookline St, Cambridge, MA 02139</div>
+          <div class="event__tags">
+            <span class="tag">Rock</span><span class="tag">Electronic</span><span class="tag">Indie</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Regattabar</h3>
+          <div class="event__meta">Cambridge · One Bennett St, Cambridge, MA (The Charles Hotel)</div>
+          <div class="event__tags">
+            <span class="tag">Jazz</span><span class="tag">Latin Jazz</span><span class="tag">World</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Wally’s Café Jazz Club</h3>
+          <div class="event__meta">South End · 427 Massachusetts Ave, Boston, MA 02118</div>
+          <div class="event__tags">
+            <span class="tag">Jazz</span><span class="tag">Students</span><span class="tag">Nightly</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Scullers Jazz Club</h3>
+          <div class="event__meta">Allston/Cambridge line · 400 Soldiers Field Rd, Boston, MA 02134</div>
+          <div class="event__tags">
+            <span class="tag">Jazz</span><span class="tag">Soul</span><span class="tag">R&amp;B</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">O’Brien’s Pub</h3>
+          <div class="event__meta">Allston · 3 Harvard Ave, Allston, MA</div>
+          <div class="event__tags">
+            <span class="tag">Punk</span><span class="tag">Metal</span><span class="tag">Indie</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">The Jungle</h3>
+          <div class="event__meta">Somerville · Community music club (see calendar)</div>
+          <div class="event__tags">
+            <span class="tag">Local</span><span class="tag">Open Mic</span><span class="tag">Live</span>
+            <a class="link" href="./events.html">See events</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">Add a venue</h3>
+          <div class="event__meta">Next step: verified venues can submit themselves for approval.</div>
+          <div class="event__tags">
+            <a class="btn btn--primary btn--small" href="./add-event.html">Get Verified</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
 
@@ -49,10 +223,21 @@
       <div class="footer__links">
         <a href="./index.html">Home</a><span class="sep">|</span>
         <a href="./events.html">Events</a><span class="sep">|</span>
-        <a href="./venues.html">Venues</a>
+        <a href="./venues.html">Venues</a><span class="sep">|</span>
+        <a href="./add-event.html">Add Event</a>
       </div>
       <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
   </footer>
+
+  <script>
+    // demo-only: pill highlight
+    document.querySelectorAll('.pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.pill').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+      });
+    });
+  </script>
 </body>
 </html>
