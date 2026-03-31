@@ -6,7 +6,17 @@
   <title>Events · Boston Music Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
+  <div class="announce">
+    <div class="container announce__inner">
+      <div class="announce__left">
+        Next 2 weeks (Apr 1–14, 2026). Grouped by day. Inside each day: first post first.
+      </div>
+      <a class="announce__cta" href="./add-event.html">Add Event (Verified)</a>
+    </div>
+  </div>
+
   <header class="topbar">
     <div class="container topbar__inner">
       <div class="brand">
@@ -14,30 +24,687 @@
         <span class="brand__music">MUSIC</span>
         <span class="brand__radar">RADAR</span>
       </div>
+
       <nav class="nav">
         <a class="nav__link" href="./index.html">Home</a>
         <a class="nav__link is-active" href="./events.html">Events</a>
         <a class="nav__link" href="./venues.html">Venues</a>
         <a class="nav__link" href="./add-event.html">Add Event</a>
       </nav>
+
       <div class="nav__actions">
-        <a class="btn btn--primary" href="#">Log In</a>
-        <a class="btn btn--ghost" href="#">Sign Up</a>
+        <a class="btn btn--primary" href="./add-event.html">Log In</a>
+        <a class="btn btn--ghost" href="./add-event.html">Sign Up</a>
       </div>
     </div>
   </header>
 
   <main class="container" style="padding:24px 0;">
-    <h1 style="margin:0 0 10px;">Events</h1>
-    <p class="muted" style="margin:0 0 18px;">Placeholder page for the midterm. Next step: show the same “grouped by day” layout here.</p>
+    <h1 style="margin:0 0 8px;">Events</h1>
+    <p class="muted" style="margin:0 0 18px;">
+      This is a researched sample feed for the professor demo. Real build = verified posting + moderation.
+    </p>
 
+    <!-- DAY: Wed Apr 1 -->
     <div class="day-group">
-      <div class="day-bar"><span>Thursday, April 24</span><span class="day-bar__note">First post first</span></div>
+      <div class="day-bar day-bar--dark">
+        <span>Wednesday, April 1, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <div class="event__title-row">
+            <h3 class="event__title">No confirmed listings in demo feed</h3>
+          </div>
+          <div class="event__meta">Add verified postings to populate this day.</div>
+          <div class="event__tags">
+            <a class="btn btn--primary btn--small" href="./add-event.html">Post an event</a>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- DAY: Thu Apr 2 -->
     <div class="day-group">
-      <div class="day-bar day-bar--dark"><span>Friday, April 25</span><span class="day-bar__note">First post first</span></div>
+      <div class="day-bar">
+        <span>Thursday, April 2, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <!-- The Sinclair -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Nothing</h3>
+            <span class="badge badge--verified" title="From venue calendar">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Rock</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venue</a>
+        </div>
+      </article>
+
+      <!-- Brighton Music Hall -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Kylie Morgan: Healed Cowgirl Tour</h3>
+            <span class="badge badge--verified" title="From venue listing">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Brighton Music Hall (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Country</span>
+            <a class="link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venue</a>
+        </div>
+      </article>
+
+      <!-- Royale -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">SHIMZA, Peace Control &amp; Saraga</h3>
+            <span class="badge badge--verified" title="From venue listing">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>10:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venue</a>
+        </div>
+      </article>
     </div>
+
+    <!-- DAY: Fri Apr 3 -->
+    <div class="day-group">
+      <div class="day-bar day-bar--dark">
+        <span>Friday, April 3, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <!-- Big Night Live -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Yo Quiero Bailar Fest (21+)</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>10:00 PM</span><span class="dot">•</span>
+            <span>Big Night Live (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Latin</span>
+            <a class="link" href="https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- The Sinclair -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">1tbsp (The Bubbles Tour)</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Brighton Music Hall -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Skizzy Mars</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Brighton Music Hall (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Hip-Hop</span>
+            <a class="link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Regattabar -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1522120692538-8fbb17a0f0ea?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Walter Smith III (with special guest Bill Pierce)</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:30 PM</span><span class="dot">•</span>
+            <span>Regattabar (Cambridge)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Jazz</span>
+            <a class="link" href="https://www.livenation.com/venue/KovZ917AYuX/regattabar-events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Sat Apr 4 -->
+    <div class="day-group">
+      <div class="day-bar">
+        <span>Saturday, April 4, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <!-- Royale -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">WeTouchGrass presents: Official Anime Boston Afterparty</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>9:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Dance</span>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Big Night Live -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">The Brook &amp; The Bluff: The Werewolf Tour</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>5:30 PM</span><span class="dot">•</span>
+            <span>Big Night Live (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Indie</span>
+            <a class="link" href="https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Big Night Live late -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">William Black (21+)</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>10:30 PM</span><span class="dot">•</span>
+            <span>Big Night Live (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span>
+            <a class="link" href="https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Regattabar -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1522120692538-8fbb17a0f0ea?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">David Rivera y La Bambula</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Regattabar (Cambridge)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Latin</span>
+            <a class="link" href="https://www.livenation.com/venue/KovZ917AYuX/regattabar-events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Brighton Music Hall -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">WITCHZ presents ENTER AFTERLIFE World Tour 2026</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Time listed on venue page</span><span class="dot">•</span>
+            <span>Brighton Music Hall (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Alt</span>
+            <a class="link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <!-- Sinclair -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Dirty Three</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>18+</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Experimental</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Mon Apr 6 -->
+    <div class="day-group">
+      <div class="day-bar day-bar--dark">
+        <span>Monday, April 6, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Angel Du$t</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 6:30 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Punk</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Tue Apr 7 -->
+    <div class="day-group">
+      <div class="day-bar">
+        <span>Tuesday, April 7, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">yung kai</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Pop</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Wed Apr 8 -->
+    <div class="day-group">
+      <div class="day-bar day-bar--dark">
+        <span>Wednesday, April 8, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">The Wedding Present — Seamonsters 35th Anniversary Tour</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Rock</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Machine Girl</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Thu Apr 9 -->
+    <div class="day-group">
+      <div class="day-bar">
+        <span>Thursday, April 9, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Hannah Cohen</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Indie</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">ODUMODUBLVCK — THE INDUSTRY MACHINE TOUR</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Big Night Live (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Hip-Hop</span>
+            <a class="link" href="https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Two Feet: The Next Steps Tour</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Alt</span>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Fri Apr 10 -->
+    <div class="day-group">
+      <div class="day-bar day-bar--dark">
+        <span>Friday, April 10, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Whitney</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Indie</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Kishi Bashi</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>6:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Indie</span>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1522120692538-8fbb17a0f0ea?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">The Martinez Brothers — North America Tour 2026</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>10:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Sat Apr 11 -->
+    <div class="day-group">
+      <div class="day-bar">
+        <span>Saturday, April 11, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Whitney</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Indie</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Sun Apr 12 -->
+    <div class="day-group">
+      <div class="day-bar day-bar--dark">
+        <span>Sunday, April 12, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Wallice</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 6:30 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Pop</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Mon Apr 13 -->
+    <div class="day-group">
+      <div class="day-bar">
+        <span>Monday, April 13, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">Lala Lala</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Indie</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
+    <!-- DAY: Tue Apr 14 -->
+    <div class="day-group">
+      <div class="day-bar day-bar--dark">
+        <span>Tuesday, April 14, 2026</span>
+        <span class="day-bar__note">First post first</span>
+      </div>
+
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">GoldFord (Space of the Heart Tour)</h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Pop</span>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
+      </article>
+    </div>
+
   </main>
 
   <footer class="footer">
@@ -45,7 +712,8 @@
       <div class="footer__links">
         <a href="./index.html">Home</a><span class="sep">|</span>
         <a href="./events.html">Events</a><span class="sep">|</span>
-        <a href="./venues.html">Venues</a>
+        <a href="./venues.html">Venues</a><span class="sep">|</span>
+        <a href="./add-event.html">Add Event</a>
       </div>
       <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
