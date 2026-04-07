@@ -6,6 +6,7 @@
   <title>Add Event · Boston Music Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <header class="topbar">
     <div class="container topbar__inner">
@@ -31,24 +32,26 @@
     <h1 style="margin:0 0 10px;">Add Event</h1>
     <p class="muted" style="margin:0 0 18px;">Demo form. Real version = verified posting + moderation.</p>
 
-    <div class="event" style="grid-template-columns: 1fr;">
+    <div class="event" style="grid-template-columns:1fr;">
       <div class="event__body" style="padding:14px;">
         <label class="muted" style="display:block;margin-bottom:6px;">Event title</label>
-        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Artist / night name" />
+        <input class="input" placeholder="Artist / night name" />
 
-        <label class="muted" style="display:block;margin-bottom:6px;">Date & time</label>
-        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Apr 22 · 8:00 PM" />
+        <label class="muted" style="display:block;margin:12px 0 6px;">Date & time</label>
+        <input class="input" placeholder="Apr 22 · 8:00 PM" />
 
-        <label class="muted" style="display:block;margin-bottom:6px;">Venue</label>
-        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Venue name + city" />
+        <label class="muted" style="display:block;margin:12px 0 6px;">Venue</label>
+        <input class="input" placeholder="Venue name + city" />
 
-        <label class="muted" style="display:block;margin-bottom:6px;">Genre</label>
-        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="Rock / Pop / Electronic…" />
+        <label class="muted" style="display:block;margin:12px 0 6px;">Genre</label>
+        <input class="input" placeholder="Rock / Pop / Electronic…" />
 
-        <label class="muted" style="display:block;margin-bottom:6px;">Ticket link</label>
-        <input style="width:100%;padding:12px;border-radius:12px;border:1px solid #e5e7eb;margin-bottom:12px;" placeholder="https://..." />
+        <label class="muted" style="display:block;margin:12px 0 6px;">Ticket link</label>
+        <input class="input" placeholder="https://..." />
 
-        <a class="btn btn--primary" href="#" onclick="alert('Demo only — posting will be verified-only.');return false;">Submit (demo)</a>
+        <div style="margin-top:14px;">
+          <a class="btn btn--primary" href="#" onclick="alert('Demo only — posting will be verified-only.');return false;">Submit (demo)</a>
+        </div>
       </div>
     </div>
   </main>
@@ -63,5 +66,7 @@
       <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
   </footer>
+
+  <script src="./app.js" defer></script>
 </body>
 </html>
