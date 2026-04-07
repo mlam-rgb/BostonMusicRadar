@@ -16,7 +16,7 @@ document.querySelectorAll(".toggle__btn").forEach((btn) => {
   });
 });
 
-// Week range label (Mon–Sun)
+// Week range label
 (() => {
   const el = document.getElementById("weekRange");
   if (!el) return;
@@ -34,7 +34,7 @@ document.querySelectorAll(".toggle__btn").forEach((btn) => {
   el.textContent = `${fmt(monday)} – ${fmt(sunday)}`;
 })();
 
-// RSVP (privacy-first) — safe + no crashes
+// RSVP (privacy-first)
 (() => {
   const getStore = () => {
     try { return JSON.parse(localStorage.getItem("bmr_rsvp") || "{}"); }
@@ -42,7 +42,6 @@ document.querySelectorAll(".toggle__btn").forEach((btn) => {
   };
   const setStore = (obj) => localStorage.setItem("bmr_rsvp", JSON.stringify(obj));
 
-  // Close any open panel when clicking outside
   document.addEventListener("click", () => {
     document.querySelectorAll(".rsvp__panel").forEach((p) => (p.hidden = true));
   });
@@ -62,14 +61,12 @@ document.querySelectorAll(".toggle__btn").forEach((btn) => {
     store[id] = store[id] || { rsvp: false, show: false, count: initialCount };
     setStore(store);
 
-    // hydrate
     if (store[id].rsvp) {
       btn.classList.add("is-on");
       btn.textContent = "RSVP'd";
     }
     if (showMe) showMe.checked = !!store[id].show;
 
-    // RSVP click
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
       const s = getStore();
@@ -93,17 +90,14 @@ document.querySelectorAll(".toggle__btn").forEach((btn) => {
       setStore(s);
     });
 
-    // Privacy dropdown
     if (privacyBtn && panel) {
       privacyBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         panel.hidden = !panel.hidden;
       });
-
       panel.addEventListener("click", (e) => e.stopPropagation());
     }
 
-    // Show-me toggle
     if (showMe) {
       showMe.addEventListener("change", (e) => {
         e.stopPropagation();
@@ -116,7 +110,6 @@ document.querySelectorAll(".toggle__btn").forEach((btn) => {
           setStore(s);
           return;
         }
-
         s[id].show = showMe.checked;
         setStore(s);
       });
