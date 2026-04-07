@@ -48,8 +48,9 @@
     <div class="container hero__inner">
       <div class="hero__top">
         <h1 class="hero__title">
-          FIND LIVE MUSIC IN <span class="accent">BOSTON</span>
+          DISCOVER BOSTON’S <span class="accent">LIVE MUSIC</span>
         </h1>
+
         <div class="toggle">
           <button class="toggle__btn is-active" type="button">This Week</button>
           <button class="toggle__btn" type="button">Today</button>
@@ -57,7 +58,7 @@
       </div>
 
       <p class="hero__sub">
-        Pick a genre and see what’s happening next. No algorithm, no preferences. Just scenes.
+        Find shows by genre and date. No algorithm, no preferences. Just scenes.
       </p>
 
       <!-- Search -->
@@ -65,7 +66,7 @@
         <label class="sr-only" for="q">Search</label>
         <div class="search__field">
           <span class="search__icon" aria-hidden="true">⌕</span>
-          <input id="q" class="search__input" placeholder="Search bands or venues..." />
+          <input id="q" class="search__input" placeholder="Search artists, venues, or dates..." />
         </div>
 
         <div class="search__field search__field--small">
@@ -83,7 +84,6 @@
           </select>
         </div>
 
-        <!-- Demo: send to Events page -->
         <a class="btn btn--primary btn--search" href="./events.html">Search</a>
       </div>
     </div>
@@ -113,45 +113,25 @@
       </div>
 
       <div class="section-head section-head--between">
-        <h2 class="section-title">Next 2 Weeks</h2>
-        <span class="muted">Grouped by day. Inside each day: first post first.</span>
+        <h2 class="section-title">This Week</h2>
+        <span class="muted" id="weekRange">Loading week…</span>
       </div>
 
-      <!-- Day group: Thu Apr 2 -->
+      <!-- THIS WEEK (sample feed) -->
       <div class="day-group">
         <div class="day-bar">
-          <span>Thursday, April 2</span>
+          <span>Thursday</span>
           <span class="day-bar__note">First post first</span>
         </div>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">Nothing</h3>
-              <span class="badge badge--verified" title="From venue calendar">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>Doors 7:00 PM</span><span class="dot">•</span>
-              <span>The Sinclair</span><span class="dot">•</span>
-              <span>Cambridge</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Rock</span>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
-          </div>
-        </article>
 
         <article class="event">
           <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
-              <h3 class="event__title">Kylie Morgan: Healed Cowgirl Tour</h3>
-              <span class="badge badge--verified" title="From venue listing">✔</span>
+              <h3 class="event__title">
+                <a class="link" href="https://www.google.com/search?q=Kylie+Morgan" target="_blank" rel="noreferrer">Kylie Morgan</a>
+              </h3>
+              <span class="badge badge--verified" title="Verified">✔</span>
             </div>
             <div class="event__meta">
               <span>7:00 PM</span><span class="dot">•</span>
@@ -160,11 +140,12 @@
             </div>
             <div class="event__tags">
               <span class="tag">Country</span>
+              <a class="link" href="https://www.youtube.com/results?search_query=Kylie+Morgan" target="_blank" rel="noreferrer">Listen</a>
               <a class="link" href="./events.html">Details</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
+            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
           </div>
         </article>
 
@@ -172,8 +153,10 @@
           <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
-              <h3 class="event__title">SHIMZA, Peace Control &amp; Saraga</h3>
-              <span class="badge badge--verified" title="From venue listing">✔</span>
+              <h3 class="event__title">
+                <a class="link" href="https://www.google.com/search?q=Shimza" target="_blank" rel="noreferrer">SHIMZA</a>
+              </h3>
+              <span class="badge badge--verified" title="Verified">✔</span>
             </div>
             <div class="event__meta">
               <span>10:00 PM</span><span class="dot">•</span>
@@ -182,19 +165,19 @@
             </div>
             <div class="event__tags">
               <span class="tag">Electronic</span>
+              <a class="link" href="https://www.youtube.com/results?search_query=Shimza" target="_blank" rel="noreferrer">Listen</a>
               <a class="link" href="./events.html">Details</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
+            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
           </div>
         </article>
       </div>
 
-      <!-- Day group: Fri Apr 3 -->
       <div class="day-group">
         <div class="day-bar day-bar--dark">
-          <span>Friday, April 3</span>
+          <span>Friday</span>
           <span class="day-bar__note">First post first</span>
         </div>
 
@@ -202,8 +185,10 @@
           <img class="event__img" alt="" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
-              <h3 class="event__title">Yo Quiero Bailar Fest (21+)</h3>
-              <span class="badge badge--verified">✔</span>
+              <h3 class="event__title">
+                <a class="link" href="https://www.google.com/search?q=Yo+Quiero+Bailar+Fest" target="_blank" rel="noreferrer">Yo Quiero Bailar Fest</a>
+              </h3>
+              <span class="badge badge--verified" title="Verified">✔</span>
             </div>
             <div class="event__meta">
               <span>10:00 PM</span><span class="dot">•</span>
@@ -213,11 +198,12 @@
             </div>
             <div class="event__tags">
               <span class="tag">Latin</span>
+              <a class="link" href="https://www.youtube.com/results?search_query=Yo+Quiero+Bailar+Fest" target="_blank" rel="noreferrer">Listen</a>
               <a class="link" href="./events.html">Details</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
+            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
           </div>
         </article>
 
@@ -225,8 +211,10 @@
           <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
           <div class="event__body">
             <div class="event__title-row">
-              <h3 class="event__title">1tbsp (The Bubbles Tour)</h3>
-              <span class="badge badge--verified">✔</span>
+              <h3 class="event__title">
+                <a class="link" href="https://www.google.com/search?q=1tbsp+artist" target="_blank" rel="noreferrer">1tbsp</a>
+              </h3>
+              <span class="badge badge--verified" title="Verified">✔</span>
             </div>
             <div class="event__meta">
               <span>Doors 7:00 PM</span><span class="dot">•</span>
@@ -235,131 +223,12 @@
             </div>
             <div class="event__tags">
               <span class="tag">Electronic</span>
+              <a class="link" href="https://www.youtube.com/results?search_query=1tbsp" target="_blank" rel="noreferrer">Listen</a>
               <a class="link" href="./events.html">Details</a>
             </div>
           </div>
           <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">Walter Smith III (with special guest Bill Pierce)</h3>
-              <span class="badge badge--verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>7:30 PM</span><span class="dot">•</span>
-              <span>Regattabar</span><span class="dot">•</span>
-              <span>Cambridge</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Jazz</span>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- Day group: Sat Apr 4 -->
-      <div class="day-group">
-        <div class="day-bar">
-          <span>Saturday, April 4</span>
-          <span class="day-bar__note">First post first</span>
-        </div>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">The Brook &amp; The Bluff: The Werewolf Tour</h3>
-              <span class="badge badge--verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>5:30 PM</span><span class="dot">•</span>
-              <span>Big Night Live</span><span class="dot">•</span>
-              <span>Boston</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Indie</span>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">William Black (21+)</h3>
-              <span class="badge badge--verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>10:30 PM</span><span class="dot">•</span>
-              <span>Big Night Live</span><span class="dot">•</span>
-              <span>Boston</span>
-              <span class="age">21+</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Electronic</span>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1522120692538-8fbb17a0f0ea?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">David Rivera y La Bambula</h3>
-              <span class="badge badge--verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>7:00 PM</span><span class="dot">•</span>
-              <span>Regattabar</span><span class="dot">•</span>
-              <span>Cambridge</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Latin</span>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">Dirty Three</h3>
-              <span class="badge badge--verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>Doors 7:00 PM</span><span class="dot">•</span>
-              <span>The Sinclair</span><span class="dot">•</span>
-              <span>Cambridge</span>
-              <span class="age">18+</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Experimental</span>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">View</a>
+            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
           </div>
         </article>
       </div>
@@ -373,7 +242,6 @@
     <aside class="right">
       <h3 class="aside-title">Sponsored</h3>
 
-      <!-- Restaurant near The Sinclair -->
       <div class="ad-card">
         <div class="ad-card__label">Sponsored</div>
         <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=70" />
@@ -385,7 +253,6 @@
         </div>
       </div>
 
-      <!-- Restaurant near The Sinclair -->
       <div class="ad-card">
         <div class="ad-card__label">Sponsored</div>
         <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1541544181074-e0ef3c6e44f3?auto=format&fit=crop&w=1400&q=70" />
@@ -397,7 +264,6 @@
         </div>
       </div>
 
-      <!-- Hotel near Big Night Live -->
       <div class="ad-card">
         <div class="ad-card__label">Sponsored</div>
         <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=70" />
@@ -409,7 +275,6 @@
         </div>
       </div>
 
-      <!-- Hotel near Big Night Live -->
       <div class="ad-card">
         <div class="ad-card__label">Sponsored</div>
         <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1400&q=70" />
@@ -421,7 +286,6 @@
         </div>
       </div>
 
-      <!-- Hotel near Royale -->
       <div class="ad-card">
         <div class="ad-card__label">Sponsored</div>
         <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210c4?auto=format&fit=crop&w=1400&q=70" />
@@ -433,7 +297,6 @@
         </div>
       </div>
 
-      <!-- CTA card -->
       <div class="ad-card ad-card--cta">
         <div class="ad-card__body">
           <div class="ad-card__title">Advertise here</div>
@@ -499,6 +362,21 @@
         btn.classList.add('is-active');
       });
     });
+
+    // Auto week range label (Mon–Sun)
+    function formatDate(d){
+      return d.toLocaleDateString(undefined, { month:'short', day:'numeric' });
+    }
+    const now = new Date();
+    const day = (now.getDay() + 6) % 7; // Mon=0 ... Sun=6
+    const monday = new Date(now);
+    monday.setDate(now.getDate() - day);
+    monday.setHours(0,0,0,0);
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    const label = `${formatDate(monday)} – ${formatDate(sunday)}`;
+    const el = document.getElementById('weekRange');
+    if (el) el.textContent = label;
   </script>
 </body>
 </html>
