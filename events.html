@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Events · Boston Music Radar</title>
+  <title>Venues · Boston Music Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
   <div class="announce">
     <div class="container announce__inner">
       <div class="announce__left">
-        Showing events from today through the next 15 days (Apr 7–Apr 22, 2026). RSVP is anonymous by default.
+        Venues and bands can post with verification. Keep it music.
       </div>
-      <a class="announce__cta" href="./add-event.html">Add Event (Verified)</a>
+      <a class="announce__cta" href="./add-event.html">Get Verified</a>
     </div>
   </div>
 
@@ -24,14 +23,12 @@
         <span class="brand__music">MUSIC</span>
         <span class="brand__radar">RADAR</span>
       </div>
-
       <nav class="nav">
         <a class="nav__link" href="./index.html">Home</a>
-        <a class="nav__link is-active" href="./events.html">Events</a>
-        <a class="nav__link" href="./venues.html">Venues</a>
+        <a class="nav__link" href="./events.html">Events</a>
+        <a class="nav__link is-active" href="./venues.html">Venues</a>
         <a class="nav__link" href="./add-event.html">Add Event</a>
       </nav>
-
       <div class="nav__actions">
         <a class="btn btn--primary" href="./add-event.html">Log In</a>
         <a class="btn btn--ghost" href="./add-event.html">Sign Up</a>
@@ -40,493 +37,27 @@
   </header>
 
   <main class="container" style="padding:24px 0;">
-    <h1 style="margin:0 0 8px;">Events</h1>
-    <p class="muted" style="margin:0 0 18px;">
-      Click any artist name to learn more. This is a demo feed built from public venue/ticket listings.
-    </p>
+    <h1 style="margin:0 0 10px;">Venues</h1>
+    <p class="muted" style="margin:0 0 18px;">Demo list. Next step: each venue page shows its upcoming events.</p>
 
-    <!-- TUE APR 7 -->
     <div class="day-group">
-      <div class="day-bar">
-        <span>Tuesday, April 7, 2026</span>
-        <span class="day-bar__note">First post first</span>
+      <div class="day-bar day-bar--dark"><span>Boston + Cambridge</span></div>
+
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">The Sinclair</h3>
+          <div class="event__meta">Cambridge · 52 Church St</div>
+          <a class="link" href="./events.html">See events (15 days)</a>
+        </div>
       </div>
 
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=yung+kai" target="_blank" rel="noreferrer">yung kai</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta">
-            <span>8:00 PM</span><span class="dot">•</span>
-            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
-            <span>All Ages</span>
-          </div>
-          <div class="event__tags">
-            <span class="tag">Pop</span>
-            <a class="link" href="https://www.google.com/search?q=yung+kai" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=yung+kai" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://www.sinclaircambridge.com/events/all" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="yungkai-sinclair-2026-04-07">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta">
-              <span class="rsvp__count"><strong>14</strong> interested</span>
-              <span class="dot">•</span>
-              <span class="rsvp__note">Anonymous by default</span>
-            </div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars">
-              <span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span>
-              <span class="rsvp__more">+11</span>
-            </div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle">
-                <input class="rsvp__showme" type="checkbox" />
-                Show me publicly as going (anonymous)
-              </label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
+      <div class="event" style="grid-template-columns: 1fr;">
+        <div class="event__body" style="padding:14px;">
+          <h3 class="event__title" style="margin:0 0 6px;">52 Church</h3>
+          <div class="event__meta">Cambridge · Late night / parties</div>
+          <a class="link" href="./events.html">See events (15 days)</a>
         </div>
-
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- WED APR 8 -->
-    <div class="day-group">
-      <div class="day-bar day-bar--dark">
-        <span>Wednesday, April 8, 2026</span>
-        <span class="day-bar__note">First post first</span>
       </div>
-
-      <!-- The Wedding Present -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=The+Wedding+Present+Seamonsters+tour" target="_blank" rel="noreferrer">The Wedding Present</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>Doors 7:00 PM</span><span class="dot">•</span><span>The Sinclair (Cambridge)</span><span class="dot">•</span><span>All Ages</span></div>
-          <div class="event__tags">
-            <span class="tag">Rock</span>
-            <a class="link" href="https://www.google.com/search?q=The+Wedding+Present" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=The+Wedding+Present" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://www.sinclaircambridge.com/events/all" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="wedding-present-sinclair-2026-04-08">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>9</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+6</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-
-      <!-- Machine Girl @ Royale -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Machine+Girl" target="_blank" rel="noreferrer">Machine Girl</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>7:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Electronic</span>
-            <a class="link" href="https://www.google.com/search?q=Machine+Girl" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Machine+Girl" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="machinegirl-royale-2026-04-08">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>19</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+16</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- THU APR 9 -->
-    <div class="day-group">
-      <div class="day-bar">
-        <span>Thursday, April 9, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <!-- Hannah Cohen -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Hannah+Cohen" target="_blank" rel="noreferrer">Hannah Cohen</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>Doors 7:00 PM</span><span class="dot">•</span><span>The Sinclair (Cambridge)</span><span class="dot">•</span><span>All Ages</span></div>
-          <div class="event__tags">
-            <span class="tag">Indie</span>
-            <a class="link" href="https://www.google.com/search?q=Hannah+Cohen" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Hannah+Cohen" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://www.sinclaircambridge.com/events/all" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="hannahcohen-sinclair-2026-04-09">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>8</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+5</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-
-      <!-- Two Feet -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Two+Feet+The+Next+Steps+Tour" target="_blank" rel="noreferrer">Two Feet</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>7:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Alt</span>
-            <a class="link" href="https://www.google.com/search?q=Two+Feet" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Two+Feet" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="twofeet-royale-2026-04-09">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>15</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+12</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- FRI APR 10 -->
-    <div class="day-group">
-      <div class="day-bar day-bar--dark">
-        <span>Friday, April 10, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <!-- Seven Lions -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Seven+Lions" target="_blank" rel="noreferrer">Seven Lions</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>9:30 PM</span><span class="dot">•</span><span>Big Night Live (Boston)</span><span class="age">21+</span></div>
-          <div class="event__tags">
-            <span class="tag">Electronic</span>
-            <a class="link" href="https://www.google.com/search?q=Seven+Lions" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Seven+Lions" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://www.ticketmaster.com/big-night-live-tickets-boston/venue/9293" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="sevenlions-bnl-2026-04-10">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>21</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+18</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-
-      <!-- The Martinez Brothers -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1522120692538-8fbb17a0f0ea?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=The+Martinez+Brothers" target="_blank" rel="noreferrer">The Martinez Brothers</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>10:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Electronic</span>
-            <a class="link" href="https://www.google.com/search?q=The+Martinez+Brothers" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=The+Martinez+Brothers" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/photo/2025-05-18/page/4/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="martinez-royale-2026-04-10">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>27</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+24</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- SUN APR 12 -->
-    <div class="day-group">
-      <div class="day-bar">
-        <span>Sunday, April 12, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <!-- Blood for Blood -->
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Blood+for+Blood+band" target="_blank" rel="noreferrer">Blood for Blood</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>5:00 PM</span><span class="dot">•</span><span>Big Night Live (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Rock</span>
-            <a class="link" href="https://www.google.com/search?q=Blood+for+Blood+band" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Blood+for+Blood" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://www.livenation.com/event/vv177ZbzGkituCss/blood-for-blood" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="bloodforblood-bnl-2026-04-12">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>18</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+15</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- THU APR 16 -->
-    <div class="day-group">
-      <div class="day-bar day-bar--dark">
-        <span>Thursday, April 16, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5b47?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=The+Growlers" target="_blank" rel="noreferrer">The Growlers</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>7:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Rock</span>
-            <a class="link" href="https://www.google.com/search?q=The+Growlers" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=The+Growlers" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/photo/2025-05-18/page/4/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="growlers-royale-2026-04-16">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>13</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+10</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- FRI APR 17 -->
-    <div class="day-group">
-      <div class="day-bar">
-        <span>Friday, April 17, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Snail+Mail+band" target="_blank" rel="noreferrer">Snail Mail</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>6:30 PM</span><span class="dot">•</span><span>Big Night Live (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Indie</span>
-            <a class="link" href="https://www.google.com/search?q=Snail+Mail+band" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Snail+Mail" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://www.ticketmaster.com/snail-mail-boston-massachusetts-04-17-2026/event/0100642CC369BC59" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="snailmail-bnl-2026-04-17">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>20</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+17</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Starjunk+95" target="_blank" rel="noreferrer">Starjunk 95</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>6:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Live</span>
-            <a class="link" href="https://www.google.com/search?q=Starjunk+95" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Starjunk+95" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/category/concerts/2026-04/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="starjunk95-royale-2026-04-17">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>7</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+4</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- TUE APR 21 -->
-    <div class="day-group">
-      <div class="day-bar day-bar--dark">
-        <span>Tuesday, April 21, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1522120692538-8fbb17a0f0ea?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Jos%C3%A9+Gonz%C3%A1lez" target="_blank" rel="noreferrer">José González</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>7:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Singer-songwriter</span>
-            <a class="link" href="https://www.google.com/search?q=Jos%C3%A9+Gonz%C3%A1lez" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Jos%C3%A9+Gonz%C3%A1lez" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/category/concerts/2026-04/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="josegonzalez-royale-2026-04-21">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>16</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+13</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
-    </div>
-
-    <!-- WED APR 22 -->
-    <div class="day-group">
-      <div class="day-bar">
-        <span>Wednesday, April 22, 2026</span>
-        <span class="day-bar__note">First post first</span>
-      </div>
-
-      <article class="event">
-        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
-        <div class="event__body">
-          <div class="event__title-row">
-            <h3 class="event__title"><a class="link" href="https://www.google.com/search?q=Pattie+Gonia+Save+Her" target="_blank" rel="noreferrer">Pattie Gonia: SAVE HER!</a></h3>
-            <span class="badge badge--verified">✔</span>
-          </div>
-          <div class="event__meta"><span>7:00 PM</span><span class="dot">•</span><span>Royale (Boston)</span></div>
-          <div class="event__tags">
-            <span class="tag">Live</span>
-            <a class="link" href="https://www.google.com/search?q=Pattie+Gonia+Save+Her" target="_blank" rel="noreferrer">Artist Info</a>
-            <a class="link" href="https://www.youtube.com/results?search_query=Pattie+Gonia" target="_blank" rel="noreferrer">Listen</a>
-            <a class="link" href="https://royaleboston.com/events/category/concerts/2026-04/" target="_blank" rel="noreferrer">Source</a>
-          </div>
-
-          <div class="rsvp" data-event-id="pattiegonia-royale-2026-04-22">
-            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
-            <div class="rsvp__meta"><span class="rsvp__count"><strong>12</strong> interested</span><span class="dot">•</span><span class="rsvp__note">Anonymous by default</span></div>
-            <button class="rsvp__privacy" type="button">Privacy</button>
-            <div class="rsvp__avatars"><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__more">+9</span></div>
-            <div class="rsvp__panel" hidden>
-              <div class="rsvp__panel-title">Privacy</div>
-              <label class="rsvp__toggle"><input class="rsvp__showme" type="checkbox" />Show me publicly as going (anonymous)</label>
-              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
-            </div>
-          </div>
-        </div>
-        <div class="event__cta"><a class="btn btn--primary btn--small" href="./venues.html">Venue</a></div>
-      </article>
     </div>
   </main>
 
@@ -535,85 +66,10 @@
       <div class="footer__links">
         <a href="./index.html">Home</a><span class="sep">|</span>
         <a href="./events.html">Events</a><span class="sep">|</span>
-        <a href="./venues.html">Venues</a><span class="sep">|</span>
-        <a href="./add-event.html">Add Event</a>
+        <a href="./venues.html">Venues</a>
       </div>
       <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
   </footer>
-
-  <script>
-    // RSVP logic (privacy-first, stored locally for demo)
-    function getStore() {
-      try { return JSON.parse(localStorage.getItem("bmr_rsvp") || "{}"); }
-      catch(e){ return {}; }
-    }
-    function setStore(obj){ localStorage.setItem("bmr_rsvp", JSON.stringify(obj)); }
-
-    document.querySelectorAll(".rsvp").forEach(block => {
-      const id = block.getAttribute("data-event-id");
-      const btn = block.querySelector(".rsvp__btn");
-      const privacyBtn = block.querySelector(".rsvp__privacy");
-      const panel = block.querySelector(".rsvp__panel");
-      const showMe = block.querySelector(".rsvp__showme");
-      const countEl = block.querySelector(".rsvp__count strong");
-
-      const store = getStore();
-      const initialCount = parseInt(countEl.textContent, 10) || 0;
-      store[id] = store[id] || { rsvp:false, show:false, count: initialCount };
-      setStore(store);
-
-      if (store[id].rsvp) { btn.classList.add("is-on"); btn.textContent = "RSVP'd"; }
-      if (showMe) showMe.checked = !!store[id].show;
-
-      btn.addEventListener("click", () => {
-        const s = getStore();
-        s[id] = s[id] || { rsvp:false, show:false, count: initialCount };
-
-        if (s[id].rsvp) {
-          s[id].rsvp = false;
-          s[id].show = false;
-          s[id].count = Math.max(0, (s[id].count || 0) - 1);
-          btn.classList.remove("is-on");
-          btn.textContent = "RSVP";
-          if (showMe) showMe.checked = false;
-        } else {
-          s[id].rsvp = true;
-          s[id].count = (s[id].count || 0) + 1;
-          btn.classList.add("is-on");
-          btn.textContent = "RSVP'd";
-        }
-
-        countEl.textContent = s[id].count;
-        setStore(s);
-      });
-
-      if (privacyBtn && panel) {
-        privacyBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          panel.hidden = !panel.hidden;
-        });
-        document.addEventListener("click", () => { panel.hidden = true; });
-        panel.addEventListener("click", (e) => e.stopPropagation());
-      }
-
-      if (showMe) {
-        showMe.addEventListener("change", () => {
-          const s = getStore();
-          s[id] = s[id] || { rsvp:false, show:false, count: initialCount };
-
-          if (!s[id].rsvp) {
-            showMe.checked = false;
-            s[id].show = false;
-            setStore(s);
-            return;
-          }
-
-          s[id].show = showMe.checked;
-          setStore(s);
-        });
-      }
-    });
-  </script>
 </body>
 </html>
