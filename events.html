@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Venues · Boston Music Radar</title>
+  <title>Events · Boston Music Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <div class="announce">
     <div class="container announce__inner">
       <div class="announce__left">
-        Venues and bands can post with verification. Keep it music.
+        Demo events. RSVP is anonymous by default.
       </div>
-      <a class="announce__cta" href="./add-event.html">Get Verified</a>
+      <a class="announce__cta" href="./add-event.html">Add Event</a>
     </div>
   </div>
 
@@ -25,8 +26,8 @@
       </div>
       <nav class="nav">
         <a class="nav__link" href="./index.html">Home</a>
-        <a class="nav__link" href="./events.html">Events</a>
-        <a class="nav__link is-active" href="./venues.html">Venues</a>
+        <a class="nav__link is-active" href="./events.html">Events</a>
+        <a class="nav__link" href="./venues.html">Venues</a>
         <a class="nav__link" href="./add-event.html">Add Event</a>
       </nav>
       <div class="nav__actions">
@@ -37,27 +38,66 @@
   </header>
 
   <main class="container" style="padding:24px 0;">
-    <h1 style="margin:0 0 10px;">Venues</h1>
-    <p class="muted" style="margin:0 0 18px;">Demo list. Next step: each venue page shows its upcoming events.</p>
+    <h1 style="margin:0 0 8px;">Events</h1>
+    <p class="muted" style="margin:0 0 18px;">
+      Click artist name to explore. This is the MVP experience.
+    </p>
 
     <div class="day-group">
-      <div class="day-bar day-bar--dark"><span>Boston + Cambridge</span></div>
-
-      <div class="event" style="grid-template-columns: 1fr;">
-        <div class="event__body" style="padding:14px;">
-          <h3 class="event__title" style="margin:0 0 6px;">The Sinclair</h3>
-          <div class="event__meta">Cambridge · 52 Church St</div>
-          <a class="link" href="./events.html">See events (15 days)</a>
-        </div>
+      <div class="day-bar">
+        <span>Live listings</span>
+        <span class="day-bar__note">15 days</span>
       </div>
 
-      <div class="event" style="grid-template-columns: 1fr;">
-        <div class="event__body" style="padding:14px;">
-          <h3 class="event__title" style="margin:0 0 6px;">52 Church</h3>
-          <div class="event__meta">Cambridge · Late night / parties</div>
-          <a class="link" href="./events.html">See events (15 days)</a>
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=70" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">
+              <a class="link" href="https://www.google.com/search?q=concerts+Boston+next+2+weeks" target="_blank" rel="noreferrer">
+                Concerts in Boston (next 2 weeks)
+              </a>
+            </h3>
+            <span class="badge badge--verified">✔</span>
+          </div>
+
+          <div class="event__meta">
+            <span>Updated daily</span><span class="dot">•</span>
+            <span>Boston-wide</span>
+          </div>
+
+          <div class="event__tags">
+            <span class="tag">All Genres</span>
+            <a class="link" href="https://www.youtube.com/results?search_query=boston+concerts" target="_blank" rel="noreferrer">Listen</a>
+          </div>
+
+          <div class="rsvp" data-event-id="events-boston-2weeks">
+            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
+            <div class="rsvp__meta">
+              <span class="rsvp__count"><strong>40</strong> interested</span>
+              <span class="dot">•</span>
+              <span class="rsvp__note">Anonymous by default</span>
+            </div>
+            <button class="rsvp__privacy" type="button">Privacy</button>
+            <div class="rsvp__avatars">
+              <span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span><span class="rsvp__avatar">●</span>
+              <span class="rsvp__more">+37</span>
+            </div>
+            <div class="rsvp__panel" hidden>
+              <div class="rsvp__panel-title">Privacy</div>
+              <label class="rsvp__toggle">
+                <input class="rsvp__showme" type="checkbox" />
+                Show me publicly as going (anonymous)
+              </label>
+              <div class="rsvp__panel-note">No names shown. You can turn this off anytime.</div>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venues</a>
+        </div>
+      </article>
     </div>
   </main>
 
@@ -66,10 +106,13 @@
       <div class="footer__links">
         <a href="./index.html">Home</a><span class="sep">|</span>
         <a href="./events.html">Events</a><span class="sep">|</span>
-        <a href="./venues.html">Venues</a>
+        <a href="./venues.html">Venues</a><span class="sep">|</span>
+        <a href="./add-event.html">Add Event</a>
       </div>
       <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
   </footer>
+
+  <script src="./app.js" defer></script>
 </body>
 </html>
