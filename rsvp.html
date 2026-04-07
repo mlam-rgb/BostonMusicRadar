@@ -55,7 +55,7 @@
             <div class="form-grid">
               <label class="full-width">
                 Event Name
-                <input type="text" placeholder="Example: LANY at Roadrunner" />
+                <input type="text" id="eventNameInput" placeholder="Example: LANY at Roadrunner" />
               </label>
 
               <label>
@@ -75,9 +75,9 @@
 
               <label class="full-width">
                 RSVP Type
-                <select>
-                  <option>Anonymous RSVP</option>
-                  <option>Public RSVP</option>
+                <select id="rsvpModeSelect">
+                  <option value="anonymous">Anonymous RSVP</option>
+                  <option value="public">Public RSVP</option>
                 </select>
               </label>
 
@@ -137,5 +137,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const eventName = params.get("event");
+    const mode = params.get("mode");
+
+    const eventInput = document.getElementById("eventNameInput");
+    const modeSelect = document.getElementById("rsvpModeSelect");
+
+    if (eventName && eventInput) {
+      eventInput.value = decodeURIComponent(eventName);
+    }
+
+    if (mode && modeSelect) {
+      if (mode === "public") modeSelect.value = "public";
+      if (mode === "anonymous") modeSelect.value = "anonymous";
+    }
+  </script>
 </body>
 </html>
