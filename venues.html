@@ -6,16 +6,8 @@
   <title>Venues · Boston Music Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-  <div class="announce">
-    <div class="container announce__inner">
-      <div class="announce__left">
-        Venues and bands can post with verification. Keep it real. Keep it music.
-      </div>
-      <a class="announce__cta" href="./add-event.html">Get Verified</a>
-    </div>
-  </div>
 
+<body>
   <header class="topbar">
     <div class="container topbar__inner">
       <div class="brand">
@@ -38,40 +30,32 @@
 
   <main class="container" style="padding:24px 0;">
     <h1 style="margin:0 0 10px;">Venues</h1>
-    <p class="muted" style="margin:0 0 18px;">Demo list. Next step: each venue page will show its upcoming events.</p>
+    <p class="muted" style="margin:0 0 18px;">Demo list. Each venue can later have its own page.</p>
 
     <div class="day-group">
       <div class="day-bar day-bar--dark"><span>Boston + Cambridge</span></div>
 
-      <div class="event" style="grid-template-columns: 1fr;">
+      <div class="event" style="grid-template-columns:1fr;">
         <div class="event__body" style="padding:14px;">
           <h3 class="event__title" style="margin:0 0 6px;">The Sinclair</h3>
-          <div class="event__meta">Cambridge · 52 Church St · Indie / Rock / Touring</div>
-          <a class="link" href="./events.html">See upcoming events</a>
+          <div class="event__meta">Cambridge · 52 Church St</div>
+          <a class="link" href="https://www.google.com/search?q=The+Sinclair+events" target="_blank" rel="noreferrer">See listings</a>
         </div>
       </div>
 
-      <div class="event" style="grid-template-columns: 1fr;">
+      <div class="event" style="grid-template-columns:1fr;">
         <div class="event__body" style="padding:14px;">
-          <h3 class="event__title" style="margin:0 0 6px;">Royale</h3>
-          <div class="event__meta">Boston · 279 Tremont St · Concerts / Dance Nights</div>
-          <a class="link" href="./events.html">See upcoming events</a>
+          <h3 class="event__title" style="margin:0 0 6px;">Roadrunner</h3>
+          <div class="event__meta">Boston · Brighton</div>
+          <a class="link" href="https://www.google.com/search?q=Roadrunner+Boston+events" target="_blank" rel="noreferrer">See listings</a>
         </div>
       </div>
 
-      <div class="event" style="grid-template-columns: 1fr;">
+      <div class="event" style="grid-template-columns:1fr;">
         <div class="event__body" style="padding:14px;">
-          <h3 class="event__title" style="margin:0 0 6px;">Big Night Live</h3>
-          <div class="event__meta">Boston · 110 Causeway St · Electronic / Pop / Hip-Hop</div>
-          <a class="link" href="./events.html">See upcoming events</a>
-        </div>
-      </div>
-
-      <div class="event" style="grid-template-columns: 1fr;">
-        <div class="event__body" style="padding:14px;">
-          <h3 class="event__title" style="margin:0 0 6px;">Brighton Music Hall</h3>
-          <div class="event__meta">Boston · 158 Brighton Ave · Touring + local</div>
-          <a class="link" href="./events.html">See upcoming events</a>
+          <h3 class="event__title" style="margin:0 0 6px;">House of Blues Boston</h3>
+          <div class="event__meta">Boston · Lansdowne St</div>
+          <a class="link" href="https://www.google.com/search?q=House+of+Blues+Boston+events" target="_blank" rel="noreferrer">See listings</a>
         </div>
       </div>
     </div>
@@ -82,10 +66,13 @@
       <div class="footer__links">
         <a href="./index.html">Home</a><span class="sep">|</span>
         <a href="./events.html">Events</a><span class="sep">|</span>
-        <a href="./venues.html">Venues</a>
+        <a href="./venues.html">Venues</a><span class="sep">|</span>
+        <a href="./add-event.html">Add Event</a>
       </div>
       <div class="footer__copy">© 2026 Boston Music Radar</div>
     </div>
   </footer>
+
+  <script src="./app.js" defer></script>
 </body>
 </html>
