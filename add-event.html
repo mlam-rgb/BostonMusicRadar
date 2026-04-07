@@ -34,14 +34,39 @@
   <main class="page-shell">
     <section class="page-hero page-hero-small">
       <div class="container">
+        <div class="hero-kicker">Submission system</div>
         <h1>Add Event</h1>
-        <p>Verified venue, artist, and promoter submissions only.</p>
+        <p>Paid submissions help reduce spam and keep listings more reliable.</p>
       </div>
     </section>
 
     <section class="page-content">
-      <div class="container">
+      <div class="container submission-layout">
         <div class="form-card">
+          <div class="form-intro">
+            <span class="pill-note">Review required</span>
+            <h2>Submit a show for review</h2>
+            <p>
+              Boston Music Radar accepts paid event submissions from venues, promoters, artists, and individuals.
+              All listings are reviewed before going live.
+            </p>
+          </div>
+
+          <div class="price-cards">
+            <div class="price-card featured">
+              <div class="price-tag">Recommended</div>
+              <h3>Verified Venue / Promoter</h3>
+              <div class="price">$25</div>
+              <p>Faster review for official venue and approved promoter submissions.</p>
+            </div>
+
+            <div class="price-card">
+              <h3>Band / Artist / Individual</h3>
+              <div class="price">$15</div>
+              <p>Paid listing to help reduce spam and keep the calendar cleaner.</p>
+            </div>
+          </div>
+
           <form class="event-form">
             <div class="form-grid">
               <label>
@@ -92,8 +117,21 @@
               </label>
 
               <label>
+                Submission Type
+                <select name="submissionType">
+                  <option>Verified Venue / Promoter</option>
+                  <option>Band / Artist / Individual</option>
+                </select>
+              </label>
+
+              <label>
                 Age Restriction
                 <input type="text" name="age" placeholder="21+ / All Ages" />
+              </label>
+
+              <label>
+                Contact Email
+                <input type="email" name="email" placeholder="name@email.com" />
               </label>
 
               <label class="full-width">
@@ -117,15 +155,32 @@
               </label>
             </div>
 
-            <div class="form-actions">
-              <button type="submit" class="btn btn-red">Submit Event</button>
+            <div class="form-actions form-actions-split">
+              <button type="submit" class="btn btn-red">Continue to Payment</button>
+              <span class="form-note">Static version for now. Later this can connect to payment and moderation.</span>
             </div>
           </form>
-
-          <div class="submission-note">
-            Static version for now. Later this can connect to moderation and verified posting.
-          </div>
         </div>
+
+        <aside class="submission-sidebar">
+          <div class="sidebar-panel">
+            <span class="pill-note">Why paid?</span>
+            <h3>Cleaner calendar</h3>
+            <p>Charging a listing fee helps filter out spammy posts and low-quality submissions.</p>
+          </div>
+
+          <div class="sidebar-panel">
+            <span class="pill-note">Priority</span>
+            <h3>Verified venues first</h3>
+            <p>Official venues and approved promoters can get faster review and stronger trust on the platform.</p>
+          </div>
+
+          <div class="sidebar-panel">
+            <span class="pill-note">Goal</span>
+            <h3>Keep it music-first</h3>
+            <p>The point is to make discovery easier, not flood the site with random posts.</p>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
