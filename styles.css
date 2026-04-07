@@ -161,6 +161,12 @@ button {
   border: 1px solid rgba(223, 36, 48, 0.14);
 }
 
+.btn-outline-dark {
+  background: #fff;
+  color: var(--dark);
+  border: 1px solid #cfd6df;
+}
+
 .hero {
   position: relative;
   min-height: 470px;
@@ -417,11 +423,42 @@ button {
   font-size: 0.93rem;
 }
 
+.public-rsvp-preview {
+  margin-top: 12px;
+}
+
+.public-rsvp-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #4b5563;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.public-rsvp-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.public-rsvp-name {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef2f7;
+  color: #1f2937;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
 .event-actions {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: 150px;
+  min-width: 170px;
 }
 
 .btn-event {
