@@ -3,22 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Boston Music Radar</title>
+  <title>Events · Boston Music Radar</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <!-- Announcement / Funding Model -->
   <div class="announce">
     <div class="container announce__inner">
       <div class="announce__left">
-        Posting is free for verified bands and venues. Support the platform with publicity.
+        Next 2 weeks (Apr 1–14, 2026). Grouped by day. Inside each day: first post first.
       </div>
-      <a class="announce__cta" href="./events.html">Advertise on Boston Music Radar</a>
+      <a class="announce__cta" href="./add-event.html">Add Event (Verified)</a>
     </div>
   </div>
 
-  <!-- Top Nav -->
   <header class="topbar">
     <div class="container topbar__inner">
       <div class="brand">
@@ -28,8 +26,8 @@
       </div>
 
       <nav class="nav">
-        <a class="nav__link is-active" href="./index.html">Home</a>
-        <a class="nav__link" href="./events.html">Events</a>
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link is-active" href="./events.html">Events</a>
         <a class="nav__link" href="./venues.html">Venues</a>
         <a class="nav__link" href="./add-event.html">Add Event</a>
       </nav>
@@ -41,305 +39,203 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
+  <main class="container" style="padding:24px 0;">
+    <h1 style="margin:0 0 8px;">Events</h1>
+    <p class="muted" style="margin:0 0 18px;">
+      Demo feed. Click any artist name to learn more. RSVP is anonymous by default.
+    </p>
 
-    <div class="container hero__inner">
-      <div class="hero__top">
-        <h1 class="hero__title">
-          DISCOVER BOSTON’S <span class="accent">LIVE MUSIC</span>
-        </h1>
-
-        <div class="toggle">
-          <button class="toggle__btn is-active" type="button">This Week</button>
-          <button class="toggle__btn" type="button">Today</button>
-        </div>
+    <!-- DAY: Thu Apr 2 -->
+    <div class="day-group">
+      <div class="day-bar">
+        <span>Thursday, April 2, 2026</span>
+        <span class="day-bar__note">First post first</span>
       </div>
 
-      <p class="hero__sub">
-        Find shows by genre and date. No algorithm, no preferences. Just scenes.
-      </p>
+      <!-- The Sinclair -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">
+              <a class="link" href="https://www.google.com/search?q=Nothing+band" target="_blank" rel="noreferrer">Nothing</a>
+            </h3>
+            <span class="badge badge--verified" title="From venue calendar">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>Doors 7:00 PM</span><span class="dot">•</span>
+            <span>The Sinclair (Cambridge)</span><span class="dot">•</span>
+            <span>All Ages</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Rock</span>
+            <a class="link" href="https://www.google.com/search?q=Nothing+band" target="_blank" rel="noreferrer">Artist Info</a>
+            <a class="link" href="https://www.youtube.com/results?search_query=Nothing+band" target="_blank" rel="noreferrer">Listen</a>
+            <a class="link" href="https://www.sinclaircambridge.com/events" target="_blank" rel="noreferrer">Source</a>
+          </div>
 
-      <!-- Search -->
-      <div class="search">
-        <label class="sr-only" for="q">Search</label>
-        <div class="search__field">
-          <span class="search__icon" aria-hidden="true">⌕</span>
-          <input id="q" class="search__input" placeholder="Search artists, venues, or dates..." />
+          <!-- RSVP (privacy-first) -->
+          <div class="rsvp" data-event-id="nothing-sinclair-2026-04-02">
+            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
+
+            <div class="rsvp__meta">
+              <span class="rsvp__count"><strong>18</strong> interested</span>
+              <span class="dot">•</span>
+              <span class="rsvp__note">Anonymous by default</span>
+            </div>
+
+            <button class="rsvp__privacy" type="button" aria-label="Privacy settings">Privacy</button>
+
+            <div class="rsvp__avatars" aria-label="People who opted in (anonymous)">
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__more">+15</span>
+            </div>
+
+            <div class="rsvp__panel" hidden>
+              <div class="rsvp__panel-title">Privacy</div>
+              <label class="rsvp__toggle">
+                <input class="rsvp__showme" type="checkbox" />
+                Show me publicly as going (anonymous)
+              </label>
+              <div class="rsvp__panel-note">
+                No names shown. You can turn this off anytime.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="search__field search__field--small">
-          <span class="search__icon" aria-hidden="true">📍</span>
-          <input class="search__input" value="Boston, MA" />
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venue</a>
+        </div>
+      </article>
+
+      <!-- Brighton Music Hall -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">
+              <a class="link" href="https://www.google.com/search?q=Kylie+Morgan" target="_blank" rel="noreferrer">Kylie Morgan</a>
+            </h3>
+            <span class="badge badge--verified" title="From venue listing">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>7:00 PM</span><span class="dot">•</span>
+            <span>Brighton Music Hall (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Country</span>
+            <a class="link" href="https://www.google.com/search?q=Kylie+Morgan" target="_blank" rel="noreferrer">Artist Info</a>
+            <a class="link" href="https://www.youtube.com/results?search_query=Kylie+Morgan" target="_blank" rel="noreferrer">Listen</a>
+            <a class="link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank" rel="noreferrer">Source</a>
+          </div>
+
+          <div class="rsvp" data-event-id="kylie-morgan-bmh-2026-04-02">
+            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
+
+            <div class="rsvp__meta">
+              <span class="rsvp__count"><strong>12</strong> interested</span>
+              <span class="dot">•</span>
+              <span class="rsvp__note">Anonymous by default</span>
+            </div>
+
+            <button class="rsvp__privacy" type="button" aria-label="Privacy settings">Privacy</button>
+
+            <div class="rsvp__avatars" aria-label="People who opted in (anonymous)">
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__more">+9</span>
+            </div>
+
+            <div class="rsvp__panel" hidden>
+              <div class="rsvp__panel-title">Privacy</div>
+              <label class="rsvp__toggle">
+                <input class="rsvp__showme" type="checkbox" />
+                Show me publicly as going (anonymous)
+              </label>
+              <div class="rsvp__panel-note">
+                No names shown. You can turn this off anytime.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="search__field search__field--small">
-          <span class="search__icon" aria-hidden="true">🗓</span>
-          <select class="search__select" aria-label="Date range">
-            <option>This Week</option>
-            <option>Today</option>
-            <option>This Weekend</option>
-            <option>This Month</option>
-          </select>
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venue</a>
+        </div>
+      </article>
+
+      <!-- Royale -->
+      <article class="event">
+        <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
+        <div class="event__body">
+          <div class="event__title-row">
+            <h3 class="event__title">
+              <a class="link" href="https://www.google.com/search?q=Shimza" target="_blank" rel="noreferrer">SHIMZA</a>
+            </h3>
+            <span class="badge badge--verified" title="From venue listing">✔</span>
+          </div>
+          <div class="event__meta">
+            <span>10:00 PM</span><span class="dot">•</span>
+            <span>Royale (Boston)</span>
+          </div>
+          <div class="event__tags">
+            <span class="tag">Electronic</span>
+            <a class="link" href="https://www.google.com/search?q=Shimza" target="_blank" rel="noreferrer">Artist Info</a>
+            <a class="link" href="https://www.youtube.com/results?search_query=Shimza" target="_blank" rel="noreferrer">Listen</a>
+            <a class="link" href="https://royaleboston.com/events/list/" target="_blank" rel="noreferrer">Source</a>
+          </div>
+
+          <div class="rsvp" data-event-id="shimza-royale-2026-04-02">
+            <button class="btn btn--ghost-dark btn--small rsvp__btn" type="button">RSVP</button>
+
+            <div class="rsvp__meta">
+              <span class="rsvp__count"><strong>26</strong> interested</span>
+              <span class="dot">•</span>
+              <span class="rsvp__note">Anonymous by default</span>
+            </div>
+
+            <button class="rsvp__privacy" type="button" aria-label="Privacy settings">Privacy</button>
+
+            <div class="rsvp__avatars" aria-label="People who opted in (anonymous)">
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__avatar" title="Anonymous">●</span>
+              <span class="rsvp__more">+23</span>
+            </div>
+
+            <div class="rsvp__panel" hidden>
+              <div class="rsvp__panel-title">Privacy</div>
+              <label class="rsvp__toggle">
+                <input class="rsvp__showme" type="checkbox" />
+                Show me publicly as going (anonymous)
+              </label>
+              <div class="rsvp__panel-note">
+                No names shown. You can turn this off anytime.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <a class="btn btn--primary btn--search" href="./events.html">Search</a>
-      </div>
+        <div class="event__cta">
+          <a class="btn btn--primary btn--small" href="./venues.html">Venue</a>
+        </div>
+      </article>
     </div>
-  </section>
 
-  <!-- Main -->
-  <main class="container main">
-    <!-- Left column -->
-    <section class="left">
-      <div class="section-head">
-        <h2 class="section-title">Genres</h2>
-        <span class="muted">Browse by scene</span>
-      </div>
+    <!-- You can copy/paste the RSVP block into every other event card the same way -->
 
-      <div class="genre-row">
-        <button class="pill is-active" type="button">Punk</button>
-        <button class="pill" type="button">Rock</button>
-        <button class="pill" type="button">Hip-Hop</button>
-        <button class="pill" type="button">R&amp;B</button>
-        <button class="pill" type="button">Pop</button>
-        <button class="pill" type="button">Jazz</button>
-        <button class="pill" type="button">Electronic / EDM</button>
-        <button class="pill" type="button">Reggae</button>
-        <button class="pill" type="button">Country</button>
-        <button class="pill" type="button">Latin</button>
-        <a class="pill pill--ghost" href="./events.html">All</a>
-      </div>
-
-      <div class="section-head section-head--between">
-        <h2 class="section-title">This Week</h2>
-        <span class="muted" id="weekRange">Loading week…</span>
-      </div>
-
-      <!-- THIS WEEK (sample feed) -->
-      <div class="day-group">
-        <div class="day-bar">
-          <span>Thursday</span>
-          <span class="day-bar__note">First post first</span>
-        </div>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">
-                <a class="link" href="https://www.google.com/search?q=Kylie+Morgan" target="_blank" rel="noreferrer">Kylie Morgan</a>
-              </h3>
-              <span class="badge badge--verified" title="Verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>7:00 PM</span><span class="dot">•</span>
-              <span>Brighton Music Hall</span><span class="dot">•</span>
-              <span>Boston</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Country</span>
-              <a class="link" href="https://www.youtube.com/results?search_query=Kylie+Morgan" target="_blank" rel="noreferrer">Listen</a>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">
-                <a class="link" href="https://www.google.com/search?q=Shimza" target="_blank" rel="noreferrer">SHIMZA</a>
-              </h3>
-              <span class="badge badge--verified" title="Verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>10:00 PM</span><span class="dot">•</span>
-              <span>Royale</span><span class="dot">•</span>
-              <span>Boston</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Electronic</span>
-              <a class="link" href="https://www.youtube.com/results?search_query=Shimza" target="_blank" rel="noreferrer">Listen</a>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
-          </div>
-        </article>
-      </div>
-
-      <div class="day-group">
-        <div class="day-bar day-bar--dark">
-          <span>Friday</span>
-          <span class="day-bar__note">First post first</span>
-        </div>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">
-                <a class="link" href="https://www.google.com/search?q=Yo+Quiero+Bailar+Fest" target="_blank" rel="noreferrer">Yo Quiero Bailar Fest</a>
-              </h3>
-              <span class="badge badge--verified" title="Verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>10:00 PM</span><span class="dot">•</span>
-              <span>Big Night Live</span><span class="dot">•</span>
-              <span>Boston</span>
-              <span class="age">21+</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Latin</span>
-              <a class="link" href="https://www.youtube.com/results?search_query=Yo+Quiero+Bailar+Fest" target="_blank" rel="noreferrer">Listen</a>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <img class="event__img" alt="" src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=800&q=65" />
-          <div class="event__body">
-            <div class="event__title-row">
-              <h3 class="event__title">
-                <a class="link" href="https://www.google.com/search?q=1tbsp+artist" target="_blank" rel="noreferrer">1tbsp</a>
-              </h3>
-              <span class="badge badge--verified" title="Verified">✔</span>
-            </div>
-            <div class="event__meta">
-              <span>Doors 7:00 PM</span><span class="dot">•</span>
-              <span>The Sinclair</span><span class="dot">•</span>
-              <span>Cambridge</span>
-            </div>
-            <div class="event__tags">
-              <span class="tag">Electronic</span>
-              <a class="link" href="https://www.youtube.com/results?search_query=1tbsp" target="_blank" rel="noreferrer">Listen</a>
-              <a class="link" href="./events.html">Details</a>
-            </div>
-          </div>
-          <div class="event__cta">
-            <a class="btn btn--primary btn--small" href="./events.html">Tickets</a>
-          </div>
-        </article>
-      </div>
-
-      <div style="display:flex; justify-content:flex-end; padding:6px 0 0;">
-        <a class="btn btn--ghost-dark btn--small" href="./events.html">View all events</a>
-      </div>
-    </section>
-
-    <!-- Right column -->
-    <aside class="right">
-      <h3 class="aside-title">Sponsored</h3>
-
-      <div class="ad-card">
-        <div class="ad-card__label">Sponsored</div>
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=70" />
-        <div class="ad-card__body">
-          <div class="ad-card__title">The Painted Burro</div>
-          <div class="ad-card__sub">Harvard Square · 32 Church St, Cambridge</div>
-          <div class="ad-card__chip">Great before The Sinclair</div>
-          <a class="btn btn--dark btn--small" href="https://www.boston-theater.com/venues/the-sinclair-music-hall/dining" target="_blank" rel="noreferrer">See Details</a>
-        </div>
-      </div>
-
-      <div class="ad-card">
-        <div class="ad-card__label">Sponsored</div>
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1541544181074-e0ef3c6e44f3?auto=format&fit=crop&w=1400&q=70" />
-        <div class="ad-card__body">
-          <div class="ad-card__title">SOURCE Restaurant</div>
-          <div class="ad-card__sub">Harvard Square · 27 Church St, Cambridge</div>
-          <div class="ad-card__chip">Pizza + gastropub vibes</div>
-          <a class="btn btn--dark btn--small" href="https://sourcerestaurants.com/" target="_blank" rel="noreferrer">Visit Website</a>
-        </div>
-      </div>
-
-      <div class="ad-card">
-        <div class="ad-card__label">Sponsored</div>
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=70" />
-        <div class="ad-card__body">
-          <div class="ad-card__title">citizenM Boston North Station</div>
-          <div class="ad-card__sub">Near Big Night Live · 80 Causeway St, Boston</div>
-          <div class="ad-card__chip">Walk to shows</div>
-          <a class="btn btn--dark btn--small" href="https://www.boston-theater.com/venues/big-night-live/hotels" target="_blank" rel="noreferrer">See Nearby Hotels</a>
-        </div>
-      </div>
-
-      <div class="ad-card">
-        <div class="ad-card__label">Sponsored</div>
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1400&q=70" />
-        <div class="ad-card__body">
-          <div class="ad-card__title">Hotel Indigo Boston Garden</div>
-          <div class="ad-card__sub">Near Big Night Live · 280 Friend St, Boston</div>
-          <div class="ad-card__chip">Make it a weekend</div>
-          <a class="btn btn--dark btn--small" href="https://www.boston-theater.com/venues/big-night-live/hotels" target="_blank" rel="noreferrer">See Details</a>
-        </div>
-      </div>
-
-      <div class="ad-card">
-        <div class="ad-card__label">Sponsored</div>
-        <img class="ad-card__img" alt="" src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210c4?auto=format&fit=crop&w=1400&q=70" />
-        <div class="ad-card__body">
-          <div class="ad-card__title">Courtyard Boston Downtown</div>
-          <div class="ad-card__sub">Near Royale · 275 Tremont St, Boston</div>
-          <div class="ad-card__chip">Quick walk after the show</div>
-          <a class="btn btn--dark btn--small" href="https://www.boston-theater.com/venues/royale-boston/hotels" target="_blank" rel="noreferrer">See Nearby Hotels</a>
-        </div>
-      </div>
-
-      <div class="ad-card ad-card--cta">
-        <div class="ad-card__body">
-          <div class="ad-card__title">Advertise here</div>
-          <div class="ad-card__sub">Restaurants, hotels, and local businesses can sponsor listings.</div>
-          <a class="btn btn--primary btn--small" href="./events.html">Learn More</a>
-          <a class="btn btn--ghost-dark btn--small" href="./add-event.html">Contact</a>
-        </div>
-      </div>
-
-      <div class="follow">
-        <div class="follow__label">Follow Boston Music Radar</div>
-        <div class="social">
-          <a class="social__btn" href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" class="social__svg" aria-hidden="true">
-              <path d="M14 8.5V7.2c0-.7.5-1.2 1.2-1.2H17V3h-2.3C12.4 3 11 4.4 11 6.7v1.8H9v3h2V21h3v-9.5h2.6l.4-3H14z"/>
-            </svg>
-          </a>
-
-          <a class="social__btn" href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" class="social__svg" aria-hidden="true">
-              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm6.3-2.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
-            </svg>
-          </a>
-
-          <a class="social__btn" href="#" aria-label="X">
-            <svg viewBox="0 0 24 24" class="social__svg" aria-hidden="true">
-              <path d="M18.9 3H21l-6.7 7.7L22 21h-6.2l-4.9-6.4L5.3 21H3l7.2-8.3L2 3h6.3l4.4 5.8L18.9 3zm-2 16h1.7L7.1 4.9H5.3L16.9 19z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </aside>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__links">
-        <a href="./index.html">Home</a>
-        <span class="sep">|</span>
-        <a href="./events.html">Events</a>
-        <span class="sep">|</span>
-        <a href="./venues.html">Venues</a>
-        <span class="sep">|</span>
+        <a href="./index.html">Home</a><span class="sep">|</span>
+        <a href="./events.html">Events</a><span class="sep">|</span>
+        <a href="./venues.html">Venues</a><span class="sep">|</span>
         <a href="./add-event.html">Add Event</a>
       </div>
       <div class="footer__copy">© 2026 Boston Music Radar</div>
@@ -347,36 +243,74 @@
   </footer>
 
   <script>
-    // Demo-only interaction: highlight genre pills
-    document.querySelectorAll('.pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.pill').forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-      });
-    });
-
-    // Demo-only: toggle buttons in hero
-    document.querySelectorAll('.toggle__btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.toggle__btn').forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-      });
-    });
-
-    // Auto week range label (Mon–Sun)
-    function formatDate(d){
-      return d.toLocaleDateString(undefined, { month:'short', day:'numeric' });
+    // RSVP logic (privacy-first, stored locally for demo)
+    function getStore() {
+      try { return JSON.parse(localStorage.getItem("bmr_rsvp") || "{}"); }
+      catch(e){ return {}; }
     }
-    const now = new Date();
-    const day = (now.getDay() + 6) % 7; // Mon=0 ... Sun=6
-    const monday = new Date(now);
-    monday.setDate(now.getDate() - day);
-    monday.setHours(0,0,0,0);
-    const sunday = new Date(monday);
-    sunday.setDate(monday.getDate() + 6);
-    const label = `${formatDate(monday)} – ${formatDate(sunday)}`;
-    const el = document.getElementById('weekRange');
-    if (el) el.textContent = label;
+    function setStore(obj){ localStorage.setItem("bmr_rsvp", JSON.stringify(obj)); }
+
+    document.querySelectorAll(".rsvp").forEach(block => {
+      const id = block.getAttribute("data-event-id");
+      const btn = block.querySelector(".rsvp__btn");
+      const privacyBtn = block.querySelector(".rsvp__privacy");
+      const panel = block.querySelector(".rsvp__panel");
+      const showMe = block.querySelector(".rsvp__showme");
+      const countEl = block.querySelector(".rsvp__count strong");
+
+      const store = getStore();
+      const initialCount = parseInt(countEl.textContent, 10) || 0;
+      store[id] = store[id] || { rsvp:false, show:false, count: initialCount };
+      setStore(store);
+
+      if (store[id].rsvp) { btn.classList.add("is-on"); btn.textContent = "RSVP'd"; }
+      showMe.checked = !!store[id].show;
+
+      btn.addEventListener("click", () => {
+        const s = getStore();
+        s[id] = s[id] || { rsvp:false, show:false, count: initialCount };
+
+        if (s[id].rsvp) {
+          s[id].rsvp = false;
+          s[id].show = false;
+          s[id].count = Math.max(0, (s[id].count || 0) - 1);
+          btn.classList.remove("is-on");
+          btn.textContent = "RSVP";
+          showMe.checked = false;
+        } else {
+          s[id].rsvp = true;
+          s[id].count = (s[id].count || 0) + 1;
+          btn.classList.add("is-on");
+          btn.textContent = "RSVP'd";
+        }
+
+        countEl.textContent = s[id].count;
+        setStore(s);
+      });
+
+      privacyBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        panel.hidden = !panel.hidden;
+      });
+
+      document.addEventListener("click", () => { panel.hidden = true; });
+      panel.addEventListener("click", (e) => e.stopPropagation());
+
+      showMe.addEventListener("change", () => {
+        const s = getStore();
+        s[id] = s[id] || { rsvp:false, show:false, count: initialCount };
+
+        if (!s[id].rsvp) {
+          showMe.checked = false;
+          s[id].show = false;
+          setStore(s);
+          return;
+        }
+
+        s[id].show = showMe.checked;
+        setStore(s);
+      });
+    });
   </script>
 </body>
 </html>
