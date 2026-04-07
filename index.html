@@ -1,3 +1,248 @@
-<div id="featuredEventsContainer"></div>
-<div id="businessCards"></div>
-<div class="genre-pills" id="genrePills"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boston Music Radar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-white">BOSTON</span>
+        <span class="brand-red">MUSIC RADAR</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="events.html">Upcoming Events</a>
+        <a href="venues.html">Venues</a>
+        <a href="add-event.html">Add Event</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-red btn-small">Log In</a>
+        <a href="#" class="btn btn-outline btn-small">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>FIND LIVE MUSIC IN <span>BOSTON TONIGHT!</span></h1>
+        <p>Pick a genre and see what’s happening in Boston over the next 2 weeks.</p>
+
+        <div class="search-bar static-search">
+          <input type="text" placeholder="Search bands or venues..." />
+          <select>
+            <option>Boston, MA</option>
+          </select>
+          <select>
+            <option>Next 2 Weeks</option>
+          </select>
+          <a href="events.html" class="btn btn-red">Search</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-main">
+      <div class="container home-grid">
+        <div class="content-left">
+          <section class="genre-section">
+            <h2>Pick a Genre:</h2>
+            <div class="genre-pills">
+              <a href="events.html" class="genre-pill active">All Events</a>
+              <a href="events.html" class="genre-pill">Rock</a>
+              <a href="events.html" class="genre-pill">Hip-Hop</a>
+              <a href="events.html" class="genre-pill">Jazz</a>
+              <a href="events.html" class="genre-pill">Pop</a>
+              <a href="events.html" class="genre-pill">Electronic</a>
+              <a href="events.html" class="genre-pill">R&B</a>
+              <a href="events.html" class="genre-pill">Folk</a>
+              <a href="events.html" class="genre-pill">Metal</a>
+              <a href="events.html" class="genre-pill">Latin</a>
+              <a href="events.html" class="genre-pill">Classical</a>
+            </div>
+          </section>
+
+          <section class="events-section">
+            <div class="section-heading">
+              <h2>Upcoming Shows</h2>
+              <span>First posted first</span>
+            </div>
+
+            <div class="date-group">
+              <div class="date-bar">Tuesday, April 7</div>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=900&q=80" alt="Live Jazz Dinner Set" />
+                <div class="event-info">
+                  <h3>Live Jazz Dinner Set <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Show 7:30 PM | The Beehive</div>
+                  <div class="event-submeta">
+                    <span>Jazz</span>
+                    <span class="small-tag">Main act 7:30 PM</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://www.beehiveboston.com/calendar" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.google.com/search?q=The+Beehive+Boston+live+jazz" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=The+Beehive+Boston+live+jazz" target="_blank">Music</a>
+                    <a class="inline-link" href="https://www.beehiveboston.com/calendar" target="_blank">Venue</a>
+                  </div>
+                  <div class="rsvp-box">
+                    <div><strong>28</strong> interested • <strong>9</strong> going</div>
+                    <div class="muted">Anonymous RSVP for now</div>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://www.beehiveboston.com/calendar" target="_blank">View Event</a>
+                  <a class="btn btn-dark btn-event" href="#">RSVP</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=900&q=80" alt="Jonathan Butler" />
+                <div class="event-info">
+                  <h3>Jonathan Butler <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Show 7:30 PM | City Winery Boston</div>
+                  <div class="event-submeta">
+                    <span>R&amp;B</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://jonathanbutler.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Jonathan+Butler+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
+                  </div>
+                  <div class="rsvp-box">
+                    <div><strong>19</strong> interested • <strong>5</strong> going</div>
+                    <div class="muted">Anonymous RSVP for now</div>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
+                  <a class="btn btn-dark btn-event" href="#">RSVP</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="date-group">
+              <div class="date-bar">Wednesday, April 8</div>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="Accusefive" />
+                <div class="event-info">
+                  <h3>Accusefive <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Doors 7:00 PM • Show 8:00 PM | Roadrunner</div>
+                  <div class="event-submeta">
+                    <span>Pop</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.google.com/search?q=Accusefive+official" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Accusefive+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Venue</a>
+                  </div>
+                  <div class="rsvp-box">
+                    <div><strong>21</strong> interested • <strong>7</strong> going</div>
+                    <div class="muted">Anonymous RSVP for now</div>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/calendar/" target="_blank">View Event</a>
+                  <a class="btn btn-dark btn-event" href="#">RSVP</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1571266028243-d220c9f2f2f3?auto=format&fit=crop&w=900&q=80" alt="Machine Girl" />
+                <div class="event-info">
+                  <h3>Machine Girl <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Show 7:00 PM | Royale</div>
+                  <div class="event-submeta">
+                    <span>Electronic</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.machinegirl.net/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Machine+Girl+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Venue</a>
+                  </div>
+                  <div class="rsvp-box">
+                    <div><strong>35</strong> interested • <strong>14</strong> going</div>
+                    <div class="muted">Anonymous RSVP for now</div>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://royaleboston.com/events/list/" target="_blank">View Event</a>
+                  <a class="btn btn-dark btn-event" href="#">RSVP</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="home-link-row">
+              <a href="events.html" class="btn btn-red">See All Events</a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="sidebar">
+          <h2>From Boston Businesses</h2>
+
+          <article class="business-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Tasty Bites Bistro" />
+            <div class="business-body">
+              <h3>Tasty Bites Bistro</h3>
+              <p>Good food before the show.</p>
+              <span class="business-tag">Near major venues</span>
+              <a href="https://www.google.com/search?q=restaurant+near+Boston+music+venues" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
+            </div>
+          </article>
+
+          <article class="business-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Seaport Stay Hotel" />
+            <div class="business-body">
+              <h3>Seaport Stay Hotel</h3>
+              <p>Stay close to the music.</p>
+              <span class="business-tag">For visitors</span>
+              <a href="https://www.google.com/search?q=Boston+hotel+near+music+venues" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
+            </div>
+          </article>
+
+          <article class="business-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Late Night Pizza Co." />
+            <div class="business-body">
+              <h3>Late Night Pizza Co.</h3>
+              <p>A quick stop after the show.</p>
+              <span class="business-tag">Open late</span>
+              <a href="https://www.google.com/search?q=late+night+pizza+Boston" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="venues.html">About</a>
+        <a href="add-event.html">Contact</a>
+        <a href="venues.html">For Businesses</a>
+      </div>
+      <div class="footer-right">
+        <p>© 2026 Boston Music Radar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
