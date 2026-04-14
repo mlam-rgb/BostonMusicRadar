@@ -38,16 +38,16 @@
         <div class="hero-kicker">Live music in Boston this week</div>
         <h1>FIND YOUR <span>NEXT SHOW</span></h1>
         <p>
-          Discover concerts in Boston by genre, date, and venue without searching through scattered posts and random event pages.
+          Discover concerts in Boston by venue, vibe, and date without searching through scattered posts and random event pages.
         </p>
 
-        <div class="search-bar static-search">
+        <div class="search-bar">
           <input type="text" placeholder="Search artists, venues, or neighborhoods..." />
           <select>
             <option>Boston, MA</option>
           </select>
           <select>
-            <option>This Week</option>
+            <option>Today to Sunday</option>
           </select>
           <a href="#all-events" class="btn btn-red">Browse Events</a>
         </div>
@@ -66,37 +66,32 @@
           <section class="genre-section">
             <div class="section-top">
               <div>
-                <h2>This Week in Boston</h2>
-                <span class="section-subtext">A cleaner view of current shows worth checking</span>
+                <h2>Shows Happening This Week</h2>
+                <span class="section-subtext">From today through Sunday across the venues on the platform</span>
               </div>
               <a href="index.html" class="section-link">Back to homepage</a>
             </div>
 
             <div class="genre-pills">
-              <a href="#all-events" class="genre-pill active">All Events</a>
+              <a href="#featured-local" class="genre-pill active">Featured Local</a>
               <a href="#latin" class="genre-pill">Latin</a>
-              <a href="#indie" class="genre-pill">Indie</a>
-              <a href="#pop" class="genre-pill">Pop</a>
-              <a href="#classical" class="genre-pill">Classical</a>
-              <a href="#folk" class="genre-pill">Folk</a>
+              <a href="#beehive" class="genre-pill">The Beehive</a>
+              <a href="#city-winery" class="genre-pill">City Winery</a>
+              <a href="#roadrunner" class="genre-pill">Roadrunner</a>
+              <a href="#sinclair" class="genre-pill">The Sinclair</a>
+              <a href="#royale" class="genre-pill">Royale</a>
+              <a href="#symphony-hall" class="genre-pill">Symphony Hall</a>
             </div>
           </section>
 
           <section class="events-section" id="all-events">
-            <div class="section-heading">
-              <div>
-                <h2>Upcoming Shows</h2>
-                <span>Updated for this week and linked to official pages where possible</span>
-              </div>
-            </div>
-
-            <section class="genre-block" id="latin">
+            <section class="genre-block" id="featured-local">
               <div class="genre-block-header">
-                <h3>Latin</h3>
-                <p>Danceable nights, strong live bands, and high-energy performances around Boston and Cambridge.</p>
+                <h3>Featured Local Picks</h3>
+                <p>Real local listings that make the platform feel connected to the Boston and Cambridge scene.</p>
               </div>
 
-              <article class="event-card featured-event">
+              <article class="event-card featured-event" id="latin">
                 <img class="event-thumb" src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=900&q=80" alt="The Timba Messengers performing live" />
                 <div class="event-info">
                   <h3>The Timba Messengers <span class="verified-badge">✔</span></h3>
@@ -169,58 +164,43 @@
               </article>
             </section>
 
-            <section class="genre-block" id="indie">
+            <section class="genre-block" id="beehive">
               <div class="genre-block-header">
-                <h3>Indie</h3>
-                <p>Band-driven nights with strong fan energy and bigger-room options.</p>
+                <h3>The Beehive</h3>
+                <p>Live music all week, plus weekend brunch sets.</p>
               </div>
 
               <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="Indie rock concert crowd" />
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Live music at The Beehive" />
                 <div class="event-info">
-                  <h3>Good Kid <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • Doors 7:00 PM • Show 8:00 PM • Roadrunner</div>
+                  <h3>Live Music at The Beehive <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Tue–Wed 7:30 PM • Thu–Sat 6:30 PM • Sun 7:30 PM • South End</div>
                   <div class="event-submeta">
-                    <span>Indie Rock</span>
-                    <span class="small-tag">Can We Hang Out? Tour</span>
+                    <span>Jazz / Soul / Funk / More</span>
+                    <span class="small-tag">Daily live music</span>
                   </div>
                   <p class="event-description">
-                    A strong option for people who want a louder, younger crowd and a bigger concert-room feel. 
+                    A venue that stays active throughout the week, which makes it useful for discovery even when a specific artist listing is not highlighted.
                   </p>
                   <div class="link-row">
-                    <a class="inline-link" href="https://roadrunnerboston.com/events/detail/?event_id=1234361" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://goodkidofficial.com/" target="_blank">Artist</a>
-                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Venue</a>
-                  </div>
-                  <div class="rsvp-box">
-                    <div><strong>31</strong> interested • <strong>12</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
-                    <div class="public-rsvp-preview">
-                      <span class="public-rsvp-label">Public RSVPs</span>
-                      <div class="public-rsvp-list">
-                        <span class="public-rsvp-name">Noah</span>
-                        <span class="public-rsvp-name">Cam</span>
-                        <span class="public-rsvp-name">Jules</span>
-                      </div>
-                    </div>
+                    <a class="inline-link" href="https://www.beehiveboston.com/calendar" target="_blank">Calendar</a>
+                    <a class="inline-link" href="https://www.beehiveboston.com/" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/events/detail/?event_id=1234361" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Good%20Kid%20-%20Roadrunner&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Good%20Kid%20-%20Roadrunner&mode=public">RSVP Publicly</a>
+                  <a class="btn btn-red btn-event" href="https://www.beehiveboston.com/calendar" target="_blank">View Venue Calendar</a>
                 </div>
               </article>
             </section>
 
-            <section class="genre-block" id="pop">
+            <section class="genre-block" id="city-winery">
               <div class="genre-block-header">
-                <h3>Pop</h3>
-                <p>Artist-driven shows with strong live energy and clear official links.</p>
+                <h3>City Winery Boston</h3>
+                <p>Multiple current listings this week in a more intimate seated room.</p>
               </div>
 
               <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=900&q=80" alt="Pop concert stage lights" />
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=900&q=80" alt="Grag Queen and Bright Light Bright Light" />
                 <div class="event-info">
                   <h3>Grag Queen and Bright Light Bright Light <span class="verified-badge">✔</span></h3>
                   <div class="event-meta">Tuesday, April 14 • 7:30 PM • City Winery Boston</div>
@@ -228,156 +208,237 @@
                     <span>Pop</span>
                     <span class="small-tag">Main Stage</span>
                   </div>
-                  <p class="event-description">
-                    A polished concert night in a venue that feels more intimate than a large hall. 
-                  </p>
                   <div class="link-row">
                     <a class="inline-link" href="https://tickets.citywinery.com/event/grag-queen-and-bright-light-bright-light-nq2v42" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://gragqueen.com.br/index2.php" target="_blank">Grag Queen</a>
-                    <a class="inline-link" href="https://www.brightlightx2.com/" target="_blank">Bright Light Bright Light</a>
+                    <a class="inline-link" href="https://www.brightlightx2.com/" target="_blank">Artist</a>
                     <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
-                  </div>
-                  <div class="rsvp-box">
-                    <div><strong>24</strong> interested • <strong>8</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
-                    <div class="public-rsvp-preview">
-                      <span class="public-rsvp-label">Public RSVPs</span>
-                      <div class="public-rsvp-list">
-                        <span class="public-rsvp-name">Mia</span>
-                        <span class="public-rsvp-name">Jordan</span>
-                        <span class="public-rsvp-name">Ariel</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 <div class="event-actions">
                   <a class="btn btn-red btn-event" href="https://tickets.citywinery.com/event/grag-queen-and-bright-light-bright-light-nq2v42" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Grag%20Queen%20and%20Bright%20Light%20Bright%20Light%20-%20City%20Winery%20Boston&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Grag%20Queen%20and%20Bright%20Light%20Bright%20Light%20-%20City%20Winery%20Boston&mode=public">RSVP Publicly</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="David Cook live show" />
+                <div class="event-info">
+                  <h3>David Cook plus Jeff LeBlanc <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Wednesday, April 15 • 7:30 PM • City Winery Boston</div>
+                  <div class="event-submeta">
+                    <span>Pop / Rock</span>
+                    <span class="small-tag">Main Stage</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=900&q=80" alt="Comedy night at City Winery" />
+                <div class="event-info">
+                  <h3>Bill Bellamy <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Friday, April 17 • 2 shows • City Winery Boston</div>
+                  <div class="event-submeta">
+                    <span>Comedy</span>
+                    <span class="small-tag">Two shows</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80" alt="JFDR plus Anju live" />
+                <div class="event-info">
+                  <h3>JFDR plus Anju <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Sunday, April 19 • 7:30 PM • Haymarket Lounge at City Winery Boston</div>
+                  <div class="event-submeta">
+                    <span>Indie / Alternative</span>
+                    <span class="small-tag">Haymarket Lounge</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
                 </div>
               </article>
             </section>
 
-            <section class="genre-block" id="classical">
+            <section class="genre-block" id="roadrunner">
               <div class="genre-block-header">
-                <h3>Classical</h3>
-                <p>Concert-hall experiences for people who want something more focused and cinematic.</p>
+                <h3>Roadrunner</h3>
+                <p>Large-room concerts and touring acts this week.</p>
               </div>
 
               <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=900&q=80" alt="Classical concert hall performance" />
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="Good Kid live at Roadrunner" />
                 <div class="event-info">
-                  <h3>Explorer Concert | Beethoven’s Symphony No. 5 <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 14 • 6:30 PM • Symphony Hall</div>
+                  <h3>Good Kid <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Thursday, April 16 • Doors 7:00 PM • Show 8:00 PM • Roadrunner</div>
                   <div class="event-submeta">
-                    <span>Classical</span>
-                    <span class="small-tag">Boston Symphony Orchestra</span>
+                    <span>Indie Rock</span>
+                    <span class="small-tag">Can We Hang Out? Tour</span>
                   </div>
-                  <p class="event-description">
-                    A strong pick for people looking for a more formal concert night in one of Boston’s most recognizable music venues. 
-                  </p>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://roadrunnerboston.com/events/detail/?event_id=1234361" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://goodkidofficial.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/events/detail/?event_id=1234361" target="_blank">View Event</a>
+                </div>
+              </article>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="Roadrunner concert" />
+                <div class="event-info">
+                  <h3>Much Love 10 Year Anniversary <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Sunday, April 19 • Doors 6:00 PM • Roadrunner</div>
+                  <div class="event-submeta">
+                    <span>Live Event</span>
+                    <span class="small-tag">Anniversary show</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://roadrunnerboston.com/" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/" target="_blank">View Event</a>
+                </div>
+              </article>
+            </section>
+
+            <section class="genre-block" id="sinclair">
+              <div class="genre-block-header">
+                <h3>The Sinclair</h3>
+                <p>A packed run of shows from Tuesday through Sunday.</p>
+              </div>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Lala Lala</h3>
+                  <div class="event-meta">Tuesday, April 14 • Doors 7:00 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>GoldFord</h3>
+                  <div class="event-meta">Wednesday, April 15 • Doors 7:00 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Powfu</h3>
+                  <div class="event-meta">Thursday, April 16 • Doors 7:00 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Krooked Kings</h3>
+                  <div class="event-meta">Friday, April 17 • Doors 7:00 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>The Glitter Boys</h3>
+                  <div class="event-meta">Friday, April 17 • Doors 9:30 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Bearly Dead</h3>
+                  <div class="event-meta">Saturday, April 18 • Doors 7:00 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Heavenly</h3>
+                  <div class="event-meta">Sunday, April 19 • Doors 7:00 PM • The Sinclair</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div>
+              </article>
+            </section>
+
+            <section class="genre-block" id="royale">
+              <div class="genre-block-header">
+                <h3>Royale</h3>
+                <p>Two current shows inside the Tuesday-to-Sunday window.</p>
+              </div>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>The Growlers</h3>
+                  <div class="event-meta">Thursday, April 16 • 7:00 PM • Royale</div>
+                  <div class="link-row"><a class="inline-link" href="https://royaleboston.com/event/the-growlers-3/" target="_blank">Event</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://royaleboston.com/event/the-growlers-3/" target="_blank">View</a></div>
+              </article>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Starjunk 95</h3>
+                  <div class="event-meta">Friday, April 17 • Doors 6:00 PM • Show 7:00 PM • Royale</div>
+                  <div class="link-row"><a class="inline-link" href="https://royaleboston.com/event/starjunk-95/" target="_blank">Event</a></div>
+                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://royaleboston.com/event/starjunk-95/" target="_blank">View</a></div>
+              </article>
+            </section>
+
+            <section class="genre-block" id="symphony-hall">
+              <div class="genre-block-header">
+                <h3>Symphony Hall</h3>
+                <p>Major BSO programming this week.</p>
+              </div>
+
+              <article class="event-card">
+                <div class="event-info">
+                  <h3>Explorer Concert | Beethoven’s Symphony No. 5</h3>
+                  <div class="event-meta">Tuesday, April 14 • 6:30 PM • Symphony Hall</div>
                   <div class="link-row">
                     <a class="inline-link" href="https://www.bso.org/events/explorer-concert-beethoven-5" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://www.bso.org/" target="_blank">Artist / Organization</a>
                     <a class="inline-link" href="https://www.bso.org/events" target="_blank">Venue</a>
                   </div>
-                  <div class="rsvp-box">
-                    <div><strong>18</strong> interested • <strong>6</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
-                    <div class="public-rsvp-preview">
-                      <span class="public-rsvp-label">Public RSVPs</span>
-                      <div class="public-rsvp-list">
-                        <span class="public-rsvp-name">Emma</span>
-                        <span class="public-rsvp-name">Luis</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://www.bso.org/events/explorer-concert-beethoven-5" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Beethoven%20Symphony%20No.%205%20-%20Symphony%20Hall&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Beethoven%20Symphony%20No.%205%20-%20Symphony%20Hall&mode=public">RSVP Publicly</a>
-                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.bso.org/events/explorer-concert-beethoven-5" target="_blank">View Event</a></div>
               </article>
 
               <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80" alt="Orchestra performance on stage" />
                 <div class="event-info">
-                  <h3>Ravel Mother Goose Suite and Rachmaninoff Symphonic Dances <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Friday, April 17 • 1:30 PM • Symphony Hall</div>
-                  <div class="event-submeta">
-                    <span>Classical</span>
-                    <span class="small-tag">Boston Symphony Orchestra</span>
-                  </div>
-                  <p class="event-description">
-                    A strong daytime classical option for people who want a more immersive hall experience. 
-                  </p>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.bso.org/special-ticket-opportunities" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://www.bso.org/" target="_blank">Artist / Organization</a>
-                    <a class="inline-link" href="https://www.bso.org/events" target="_blank">Venue</a>
-                  </div>
-                  <div class="rsvp-box">
-                    <div><strong>12</strong> interested • <strong>4</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
-                    <div class="public-rsvp-preview">
-                      <span class="public-rsvp-label">Public RSVPs</span>
-                      <div class="public-rsvp-list">
-                        <span class="public-rsvp-name">Sara</span>
-                        <span class="public-rsvp-name">Ben</span>
-                      </div>
-                    </div>
-                  </div>
+                  <h3>Ravel Mother Goose Suite and Rachmaninoff Symphonic Dances</h3>
+                  <div class="event-meta">Thursday to Saturday, April 16–18 • Symphony Hall</div>
+                  <div class="link-row"><a class="inline-link" href="https://www.bso.org/events" target="_blank">BSO Events</a></div>
                 </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://www.bso.org/special-ticket-opportunities" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Ravel%20Mother%20Goose%20Suite%20and%20Rachmaninoff%20Symphonic%20Dances%20-%20Symphony%20Hall&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Ravel%20Mother%20Goose%20Suite%20and%20Rachmaninoff%20Symphonic%20Dances%20-%20Symphony%20Hall&mode=public">RSVP Publicly</a>
-                </div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="folk">
-              <div class="genre-block-header">
-                <h3>Folk / Indie</h3>
-                <p>More intimate songwriting-focused nights with strong artist identity.</p>
-              </div>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="Indie folk live performance" />
-                <div class="event-info">
-                  <h3>José González <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 21 • 8:00 PM • Royale</div>
-                  <div class="event-submeta">
-                    <span>Indie Folk</span>
-                    <span class="small-tag">Presented with Global Arts Live</span>
-                  </div>
-                  <p class="event-description">
-                    A strong option for people looking for a focused listening experience with a clear artist identity. 
-                  </p>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.globalartslive.org/event/10398" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://jose-gonzalez.com/" target="_blank">Artist</a>
-                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Venue</a>
-                  </div>
-                  <div class="rsvp-box">
-                    <div><strong>27</strong> interested • <strong>10</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
-                    <div class="public-rsvp-preview">
-                      <span class="public-rsvp-label">Public RSVPs</span>
-                      <div class="public-rsvp-list">
-                        <span class="public-rsvp-name">Lena</span>
-                        <span class="public-rsvp-name">Marco</span>
-                        <span class="public-rsvp-name">Nina</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://www.globalartslive.org/event/10398" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Jose%20Gonzalez%20-%20Royale&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Jose%20Gonzalez%20-%20Royale&mode=public">RSVP Publicly</a>
-                </div>
+                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.bso.org/events" target="_blank">View Events</a></div>
               </article>
             </section>
           </section>
@@ -424,7 +485,7 @@
 
           <article class="business-card sponsor-card">
             <div class="sponsor-badge">Featured</div>
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="SRV Boston restaurant" />
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="SRV restaurant" />
             <div class="business-body">
               <h3>SRV</h3>
               <p class="business-location">South End</p>
