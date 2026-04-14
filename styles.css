@@ -188,6 +188,10 @@ button {
   border: 1px solid #d2dae4;
 }
 
+.btn-outline-dark:hover {
+  background: #f8fafc;
+}
+
 /* Hero */
 
 .hero {
@@ -427,13 +431,13 @@ button {
 
 .date-group,
 .genre-block {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   scroll-margin-top: 110px;
 }
 
 .date-bar,
 .genre-block-header {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .date-bar {
@@ -445,7 +449,7 @@ button {
 }
 
 .genre-block-header {
-  padding: 18px 18px 16px;
+  padding: 18px 22px;
   border-radius: 18px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
   border: 1px solid var(--border-soft);
@@ -465,9 +469,9 @@ button {
 .event-card {
   display: grid;
   grid-template-columns: 210px 1fr auto;
-  gap: 20px;
+  gap: 22px;
   align-items: center;
-  padding: 18px 0;
+  padding: 20px 0;
   border-bottom: 1px solid var(--border-soft);
 }
 
@@ -731,7 +735,7 @@ button {
   font-weight: 700;
 }
 
-/* Fix badge overlap in sidebar cards */
+/* Near the show cards fixed */
 .sponsor-sidebar .business-card {
   padding-top: 18px;
   min-height: auto;
@@ -757,7 +761,7 @@ button {
   min-width: 140px;
 }
 
-/* Compact venue card for full calendar links */
+/* Compact venue card */
 .compact-venue-card {
   grid-template-columns: 1fr auto;
 }
