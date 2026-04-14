@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boston Music Radar | Events</title>
+  <title>Upcoming Events | Boston Music Radar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -26,589 +25,459 @@
       </nav>
 
       <div class="header-actions">
-        <a href="venues.html" class="btn btn-outline btn-small">Venues</a>
-        <a href="add-event.html" class="btn btn-red btn-small">Submit Event</a>
+        <a href="#" class="btn btn-red btn-small">Log In</a>
+        <a href="#" class="btn btn-outline btn-small">Sign Up</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero hero-events">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-kicker">Live music in Boston this week</div>
-        <h1>FIND YOUR <span>NEXT SHOW</span></h1>
-        <p>
-          Discover concerts across Boston and Cambridge by venue, vibe, and date
-          without searching through scattered posts and random event pages.
-        </p>
-
-        <div class="search-bar">
-          <input type="text" placeholder="Search artists, venues, or neighborhoods..." />
-          <select>
-            <option>Boston + Cambridge</option>
-          </select>
-          <select>
-            <option>Today to Sunday</option>
-          </select>
-          <a href="#all-events" class="btn btn-red">Browse Events</a>
-        </div>
-
-        <div class="hero-trust-row">
-          <span>Real venues</span>
-          <span>Official pages when available</span>
-          <span>RSVP publicly or anonymously</span>
-        </div>
+  <main class="page-shell">
+    <section class="page-hero page-hero-small">
+      <div class="container">
+        <div class="hero-kicker">Two-week Boston calendar</div>
+        <h1>Upcoming Events</h1>
+        <p>Jump by genre or scroll the full Boston calendar.</p>
       </div>
     </section>
 
-    <section class="home-main">
+    <section class="page-content">
       <div class="container home-grid">
         <div class="content-left">
-          <section class="genre-section">
+          <div class="filters-card">
             <div class="section-top">
               <div>
-                <h2>Shows Happening This Week</h2>
-                <span class="section-subtext">Updated from Tuesday through Sunday across the main venues on the platform</span>
+                <h2>Browse by Genre</h2>
+                <span class="section-subtext">Use the buttons to jump to matching acts</span>
               </div>
-              <a href="index.html" class="section-link">Back to homepage</a>
+              <a href="#all-events" class="section-link">See all by date</a>
             </div>
 
-            <div class="genre-pills">
-              <a href="#featured-local" class="genre-pill active">Featured Local</a>
-              <a href="#beehive" class="genre-pill">The Beehive</a>
-              <a href="#city-winery" class="genre-pill">City Winery</a>
-              <a href="#roadrunner" class="genre-pill">Roadrunner</a>
-              <a href="#house-of-blues" class="genre-pill">House of Blues</a>
-              <a href="#mgm" class="genre-pill">MGM Fenway</a>
-              <a href="#brighton" class="genre-pill">Brighton</a>
-              <a href="#paradise" class="genre-pill">Paradise</a>
-              <a href="#orpheum" class="genre-pill">Orpheum</a>
-              <a href="#sinclair" class="genre-pill">The Sinclair</a>
-              <a href="#middle-east" class="genre-pill">Middle East</a>
-              <a href="#royale" class="genre-pill">Royale</a>
-              <a href="#bpc" class="genre-pill">Berklee BPC</a>
-              <a href="#cafe939" class="genre-pill">Cafe 939</a>
-              <a href="#big-night-live" class="genre-pill">Big Night Live</a>
+            <div class="genre-pills" style="margin-top:16px;">
+              <a href="#all-events" class="genre-pill active">All Events</a>
+              <a href="#rock" class="genre-pill">Rock</a>
+              <a href="#hip-hop" class="genre-pill">Hip-Hop</a>
+              <a href="#jazz" class="genre-pill">Jazz</a>
+              <a href="#pop" class="genre-pill">Pop</a>
+              <a href="#electronic" class="genre-pill">Electronic</a>
+              <a href="#rnb" class="genre-pill">R&amp;B</a>
+              <a href="#folk" class="genre-pill">Folk</a>
+              <a href="#metal" class="genre-pill">Metal</a>
+              <a href="#latin" class="genre-pill">Latin</a>
+              <a href="#classical" class="genre-pill">Classical</a>
             </div>
-          </section>
+          </div>
 
-          <section class="events-section" id="all-events">
-            <section class="genre-block" id="featured-local">
-              <div class="genre-block-header">
-                <h3>Featured Local Picks</h3>
-                <p>Real local listings that make the platform feel connected to the Boston and Cambridge scene.</p>
+          <section class="events-section">
+            <div class="section-heading">
+              <div>
+                <h2>Genre Sections</h2>
+                <span>Each button lands on matching acts</span>
               </div>
+              <a href="add-event.html" class="btn btn-dark btn-small">Submit Event</a>
+            </div>
 
-              <article class="event-card featured-event">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=900&q=80" alt="The Timba Messengers performing live" />
+            <div class="genre-anchor-group" id="jazz">
+              <div class="date-bar">Jazz</div>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=900&q=80" alt="Live Jazz Dinner Set" />
                 <div class="event-info">
-                  <h3>The Timba Messengers <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Friday, April 17 • 7:00 PM • Lou’s, Harvard Square</div>
+                  <h3>Live Jazz Dinner Set <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Tuesday, April 7 • Show 7:30 PM | The Beehive</div>
                   <div class="event-submeta">
-                    <span>Latin</span>
-                    <span class="small-tag">Featured local pick</span>
+                    <span>Jazz</span>
+                    <span class="small-tag">Main act 7:30 PM</span>
                   </div>
-                  <p class="event-description">
-                    A strong live option for people looking for high-energy Afro-Caribbean and Latin music in a central Cambridge location.
-                  </p>
                   <div class="link-row">
-                    <a class="inline-link" href="https://www.instagram.com/thetimbamessengers/" target="_blank">Artist</a>
-                    <a class="inline-link" href="https://www.instagram.com/louscambridge/" target="_blank">Venue</a>
-                  </div>
-                  <div class="rsvp-box">
-                    <div><strong>36</strong> interested • <strong>14</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
+                    <a class="inline-link" href="https://www.beehiveboston.com/calendar" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.google.com/search?q=The+Beehive+Boston+live+jazz" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=The+Beehive+Boston+live+jazz" target="_blank">Music</a>
+                    <a class="inline-link" href="https://www.beehiveboston.com/calendar" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://www.instagram.com/louscambridge/" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=The%20Timba%20Messengers%20-%20Lous%20Harvard%20Square&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=The%20Timba%20Messengers%20-%20Lous%20Harvard%20Square&mode=public">RSVP Publicly</a>
+                  <a class="btn btn-red btn-event" href="https://www.beehiveboston.com/calendar" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Live%20Jazz%20Dinner%20Set%20-%20The%20Beehive&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Live%20Jazz%20Dinner%20Set%20-%20The%20Beehive&mode=public">RSVP Publicly</a>
                 </div>
               </article>
+            </div>
+
+            <div class="genre-anchor-group" id="pop">
+              <div class="date-bar">Pop</div>
 
               <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="The Timba Messengers performing at night" />
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="Accusefive" />
                 <div class="event-info">
-                  <h3>The Timba Messengers <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Saturday, April 18 • 10:00 PM • The Beehive</div>
-                  <div class="event-submeta">
-                    <span>Latin</span>
-                    <span class="small-tag">Late night set</span>
-                  </div>
-                  <p class="event-description">
-                    A late-night live set for people who want a more energetic Saturday night with strong band performance and a stylish venue atmosphere.
-                  </p>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.instagram.com/thetimbamessengers/" target="_blank">Artist</a>
-                    <a class="inline-link" href="https://www.beehiveboston.com/" target="_blank">Venue</a>
-                  </div>
-                  <div class="rsvp-box">
-                    <div><strong>41</strong> interested • <strong>18</strong> going</div>
-                    <div class="muted">Choose anonymous or public RSVP</div>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://www.beehiveboston.com/" target="_blank">View Event</a>
-                  <a class="btn btn-soft btn-event" href="rsvp.html?event=The%20Timba%20Messengers%20-%20The%20Beehive&mode=anonymous">RSVP Anonymously</a>
-                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=The%20Timba%20Messengers%20-%20The%20Beehive&mode=public">RSVP Publicly</a>
-                </div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="beehive">
-              <div class="genre-block-header">
-                <h3>The Beehive</h3>
-                <p>Live music runs through the week here, with nightly sets and weekend brunch music.</p>
-              </div>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Live music at The Beehive" />
-                <div class="event-info">
-                  <h3>Weekly Live Music at The Beehive <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tue–Wed 7:30 PM • Thu–Sat 6:30 PM • Sun 7:30 PM • South End</div>
-                  <div class="event-submeta">
-                    <span>Jazz / Soul / Funk / More</span>
-                    <span class="small-tag">Daily live music</span>
-                  </div>
-                  <p class="event-description">
-                    A venue that stays active throughout the week, which makes it useful for discovery even when a specific artist listing is not highlighted.
-                  </p>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.beehiveboston.com/calendar" target="_blank">Calendar</a>
-                    <a class="inline-link" href="https://www.beehiveboston.com/" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://www.beehiveboston.com/calendar" target="_blank">View Calendar</a>
-                </div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="city-winery">
-              <div class="genre-block-header">
-                <h3>City Winery Boston</h3>
-                <p>Multiple current listings this week in a more intimate seated room.</p>
-              </div>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=900&q=80" alt="Grag Queen and Bright Light Bright Light" />
-                <div class="event-info">
-                  <h3>Grag Queen and Bright Light Bright Light <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 14 • 7:30 PM • City Winery Boston</div>
+                  <h3>Accusefive <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Wednesday, April 8 • Doors 7:00 PM • Show 8:00 PM | Roadrunner</div>
                   <div class="event-submeta">
                     <span>Pop</span>
-                    <span class="small-tag">Main Stage</span>
+                    <span class="small-tag">Main act TBA</span>
                   </div>
                   <div class="link-row">
-                    <a class="inline-link" href="https://tickets.citywinery.com/event/grag-queen-and-bright-light-bright-light-nq2v42" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://www.brightlightx2.com/" target="_blank">Artist</a>
-                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://tickets.citywinery.com/event/grag-queen-and-bright-light-bright-light-nq2v42" target="_blank">View Event</a>
-                </div>
-              </article>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="David Cook live show" />
-                <div class="event-info">
-                  <h3>David Cook plus Jeff LeBlanc <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Wednesday, April 15 • 7:30 PM • City Winery Boston</div>
-                  <div class="event-submeta">
-                    <span>Pop / Rock</span>
-                    <span class="small-tag">Main Stage</span>
-                  </div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
-                </div>
-              </article>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=900&q=80" alt="Bill Bellamy show" />
-                <div class="event-info">
-                  <h3>Bill Bellamy <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Friday, April 17 • 2 shows • City Winery Boston</div>
-                  <div class="event-submeta">
-                    <span>Comedy</span>
-                    <span class="small-tag">Two shows</span>
-                  </div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
-                </div>
-              </article>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80" alt="JFDR plus Anju live" />
-                <div class="event-info">
-                  <h3>JFDR plus Anju <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Sunday, April 19 • 7:30 PM • Haymarket Lounge at City Winery Boston</div>
-                  <div class="event-submeta">
-                    <span>Indie / Alternative</span>
-                    <span class="small-tag">Haymarket Lounge</span>
-                  </div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
-                </div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="roadrunner">
-              <div class="genre-block-header">
-                <h3>Roadrunner</h3>
-                <p>Large-room concerts and touring acts this week. Good Kid is live on Thursday, and the venue calendar shows Much Love 10 Year Anniversary on Sunday.</p>
-              </div>
-
-              <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="Good Kid live at Roadrunner" />
-                <div class="event-info">
-                  <h3>Good Kid <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • Doors 7:00 PM • Show 8:00 PM • Roadrunner</div>
-                  <div class="event-submeta">
-                    <span>Indie Rock</span>
-                    <span class="small-tag">Can We Hang Out? Tour</span>
-                  </div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://roadrunnerboston.com/events/detail/?event_id=1234361" target="_blank">Tickets</a>
-                    <a class="inline-link" href="https://goodkidofficial.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.google.com/search?q=Accusefive+official" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Accusefive+official+music" target="_blank">Music</a>
                     <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/events/detail/?event_id=1234361" target="_blank">View Event</a>
+                  <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/calendar/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Accusefive%20-%20Roadrunner&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Accusefive%20-%20Roadrunner&mode=public">RSVP Publicly</a>
                 </div>
               </article>
 
               <article class="event-card">
-                <img class="event-thumb" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="Roadrunner concert crowd" />
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="LANY" />
                 <div class="event-info">
-                  <h3>Much Love 10 Year Anniversary <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Sunday, April 19 • Doors 6:00 PM • Roadrunner</div>
+                  <h3>LANY <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Friday, April 10 • Doors 7:00 PM • Show 8:00 PM | Roadrunner</div>
                   <div class="event-submeta">
-                    <span>Live Event</span>
-                    <span class="small-tag">Anniversary show</span>
+                    <span>Pop</span>
+                    <span class="small-tag">Main act TBA</span>
                   </div>
                   <div class="link-row">
-                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Venue Calendar</a>
+                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://thisislany.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=LANY+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://roadrunnerboston.com/calendar/" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
                   <a class="btn btn-red btn-event" href="https://roadrunnerboston.com/calendar/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=LANY%20-%20Roadrunner&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=LANY%20-%20Roadrunner&mode=public">RSVP Publicly</a>
                 </div>
               </article>
-            </section>
-
-            <section class="genre-block" id="house-of-blues">
-              <div class="genre-block-header">
-                <h3>House of Blues Boston</h3>
-                <p>Three clearly surfaced Music Hall shows inside your Tuesday to Sunday window.</p>
-              </div>
 
               <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=80" alt="Bridget Everett" />
                 <div class="event-info">
-                  <h3>Helloween: 40th Anniversary North American Tour 2026 <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Wednesday, April 15 • 6:30 PM • House of Blues Boston</div>
+                  <h3>Bridget Everett <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Friday, April 10 • Show 8:00 PM | MGM Music Hall at Fenway</div>
+                  <div class="event-submeta">
+                    <span>Pop</span>
+                    <span class="small-tag">Main act 8:00 PM</span>
+                  </div>
                   <div class="link-row">
-                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Venue</a>
+                    <a class="inline-link" href="https://www.ticketmaster.com/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.bridgeteverett.net/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Bridget+Everett+live" target="_blank">Music</a>
+                    <a class="inline-link" href="https://www.mgmmusichall.com/" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://boston.houseofblues.com/" target="_blank">View Event</a>
+                  <a class="btn btn-red btn-event" href="https://www.ticketmaster.com/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Bridget%20Everett%20-%20MGM%20Music%20Hall&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Bridget%20Everett%20-%20MGM%20Music%20Hall&mode=public">RSVP Publicly</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="genre-anchor-group" id="electronic">
+              <div class="date-bar">Electronic</div>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1571266028243-d220c9f2f2f3?auto=format&fit=crop&w=900&q=80" alt="Machine Girl" />
+                <div class="event-info">
+                  <h3>Machine Girl <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Wednesday, April 8 • Show 7:00 PM | Royale</div>
+                  <div class="event-submeta">
+                    <span>Electronic</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.machinegirl.net/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Machine+Girl+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://royaleboston.com/events/list/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Machine%20Girl%20-%20Royale&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Machine%20Girl%20-%20Royale&mode=public">RSVP Publicly</a>
                 </div>
               </article>
 
               <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1571266028243-d220c9f2f2f3?auto=format&fit=crop&w=900&q=80" alt="HEALTH x CARPENTER BRUT" />
                 <div class="event-info">
                   <h3>HEALTH x CARPENTER BRUT <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Friday, April 17 • 6:30 PM • House of Blues Boston</div>
+                  <div class="event-meta">Friday, April 17 • Show 6:30 PM | House of Blues Boston</div>
+                  <div class="event-submeta">
+                    <span>Electronic</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
                   <div class="link-row">
+                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.youwillloveeachother.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=HEALTH+official+music" target="_blank">Music</a>
                     <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
                   <a class="btn btn-red btn-event" href="https://boston.houseofblues.com/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=HEALTH%20x%20CARPENTER%20BRUT%20-%20House%20of%20Blues%20Boston&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=HEALTH%20x%20CARPENTER%20BRUT%20-%20House%20of%20Blues%20Boston&mode=public">RSVP Publicly</a>
                 </div>
               </article>
+            </div>
+
+            <div class="genre-anchor-group" id="rnb">
+              <div class="date-bar">R&amp;B</div>
 
               <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=900&q=80" alt="Jonathan Butler" />
                 <div class="event-info">
-                  <h3>I LOVE YOU BUT... I CHOSE THE MAINE <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Saturday, April 18 • 5:30 PM • House of Blues Boston</div>
+                  <h3>Jonathan Butler <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Tuesday, April 7 • Show 7:30 PM | City Winery Boston</div>
+                  <div class="event-submeta">
+                    <span>R&amp;B</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
                   <div class="link-row">
-                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Venue</a>
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://jonathanbutler.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Jonathan+Butler+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://citywinery.com/pages/events/boston" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://boston.houseofblues.com/" target="_blank">View Event</a>
+                  <a class="btn btn-red btn-event" href="https://citywinery.com/pages/events/boston" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Jonathan%20Butler%20-%20City%20Winery%20Boston&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Jonathan%20Butler%20-%20City%20Winery%20Boston&mode=public">RSVP Publicly</a>
                 </div>
               </article>
-            </section>
-
-            <section class="genre-block" id="mgm">
-              <div class="genre-block-header">
-                <h3>MGM Music Hall at Fenway</h3>
-                <p>A major Fenway room with a clearly surfaced Saturday show in your date window.</p>
-              </div>
 
               <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80" alt="Jae Stephens" />
                 <div class="event-info">
-                  <h3>Lewis Capaldi with Joy Crookes <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Saturday, April 18 • 7:30 PM • MGM Music Hall at Fenway</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://crossroadspresents.com/pages/mgm-fenway-music-hall" target="_blank">Venue</a>
+                  <h3>Jae Stephens <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Tuesday, April 21 • Show 7:00 PM | Brighton Music Hall</div>
+                  <div class="event-submeta">
+                    <span>R&amp;B</span>
+                    <span class="small-tag">Main act TBA</span>
                   </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://crossroadspresents.com/pages/mgm-fenway-music-hall" target="_blank">View Event</a>
-                </div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="brighton">
-              <div class="genre-block-header">
-                <h3>Brighton Music Hall</h3>
-                <p>Two clearly surfaced shows in the Tuesday to Sunday window.</p>
-              </div>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Together Pangea, The High Curbs <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 14 • 7:00 PM • Brighton Music Hall</div>
                   <div class="link-row">
+                    <a class="inline-link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.google.com/search?q=Jae+Stephens+official" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Jae+Stephens+official+music" target="_blank">Music</a>
                     <a class="inline-link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
                   <a class="btn btn-red btn-event" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Jae%20Stephens%20-%20Brighton%20Music%20Hall&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Jae%20Stephens%20-%20Brighton%20Music%20Hall&mode=public">RSVP Publicly</a>
                 </div>
               </article>
+            </div>
+
+            <div class="genre-anchor-group" id="rock">
+              <div class="date-bar">Rock</div>
 
               <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80" alt="Circle Jerks and Gorilla Biscuits" />
                 <div class="event-info">
-                  <h3>An Evening With Shadowgrass <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • 7:00 PM • Brighton Music Hall</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank">Venue</a>
+                  <h3>Circle Jerks &amp; Gorilla Biscuits <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Friday, April 10 • Show 7:00 PM | Paradise Rock Club</div>
+                  <div class="event-submeta">
+                    <span>Rock</span>
+                    <span class="small-tag">Main act TBA</span>
                   </div>
-                </div>
-                <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://crossroadspresents.com/pages/brighton-music-hall" target="_blank">View Event</a>
-                </div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="paradise">
-              <div class="genre-block-header">
-                <h3>Paradise Rock Club</h3>
-                <p>A classic Boston rock room with a clearly surfaced Wednesday show.</p>
-              </div>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Young Rising Sons <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Wednesday, April 15 • 7:00 PM • Paradise Rock Club</div>
                   <div class="link-row">
+                    <a class="inline-link" href="https://www.ticketmaster.com/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.google.com/search?q=Circle+Jerks+official" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Circle+Jerks+official+music" target="_blank">Music</a>
                     <a class="inline-link" href="https://crossroadspresents.com/pages/paradise-rock-club" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://crossroadspresents.com/pages/paradise-rock-club" target="_blank">View Event</a>
+                  <a class="btn btn-red btn-event" href="https://www.ticketmaster.com/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Circle%20Jerks%20and%20Gorilla%20Biscuits%20-%20Paradise%20Rock%20Club&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Circle%20Jerks%20and%20Gorilla%20Biscuits%20-%20Paradise%20Rock%20Club&mode=public">RSVP Publicly</a>
                 </div>
               </article>
-            </section>
-
-            <section class="genre-block" id="orpheum">
-              <div class="genre-block-header">
-                <h3>Orpheum Theatre</h3>
-                <p>A historic downtown room with a clearly surfaced Thursday show.</p>
-              </div>
 
               <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=900&q=80" alt="Bush" />
                 <div class="event-info">
-                  <h3>Rhiannon Giddens <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • 7:30 PM • Orpheum Theatre</div>
+                  <h3>Bush <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Sunday, April 12 • Show 7:00 PM | MGM Music Hall at Fenway</div>
+                  <div class="event-submeta">
+                    <span>Rock</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
                   <div class="link-row">
-                    <a class="inline-link" href="https://crossroadspresents.com/pages/orpheum-theatre" target="_blank">Venue</a>
+                    <a class="inline-link" href="https://www.ticketmaster.com/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.bushofficial.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Bush+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://www.mgmmusichall.com/" target="_blank">Venue</a>
                   </div>
                 </div>
                 <div class="event-actions">
-                  <a class="btn btn-red btn-event" href="https://crossroadspresents.com/pages/orpheum-theatre" target="_blank">View Event</a>
+                  <a class="btn btn-red btn-event" href="https://www.ticketmaster.com/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Bush%20-%20MGM%20Music%20Hall%20at%20Fenway&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Bush%20-%20MGM%20Music%20Hall%20at%20Fenway&mode=public">RSVP Publicly</a>
                 </div>
               </article>
-            </section>
 
-            <section class="genre-block" id="sinclair">
-              <div class="genre-block-header">
-                <h3>The Sinclair</h3>
-                <p>A packed run of shows from Tuesday through Sunday in Harvard Square.</p>
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=900&q=80" alt="The Maine" />
+                <div class="event-info">
+                  <h3>I LOVE YOU BUT... I CHOSE THE MAINE <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Saturday, April 18 • Show 6:30 PM | House of Blues Boston</div>
+                  <div class="event-submeta">
+                    <span>Rock</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.themaineband.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=The+Maine+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://boston.houseofblues.com/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=The%20Maine%20-%20House%20of%20Blues%20Boston&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=The%20Maine%20-%20House%20of%20Blues%20Boston&mode=public">RSVP Publicly</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="genre-anchor-group" id="metal">
+              <div class="date-bar">Metal</div>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Helloween" />
+                <div class="event-info">
+                  <h3>Helloween <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Wednesday, April 15 • Show 6:30 PM | House of Blues Boston</div>
+                  <div class="event-submeta">
+                    <span>Metal</span>
+                    <span class="small-tag">Main act TBA</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.helloween.org/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Helloween+official+music" target="_blank">Music</a>
+                    <a class="inline-link" href="https://boston.houseofblues.com/" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://boston.houseofblues.com/" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Helloween%20-%20House%20of%20Blues%20Boston&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Helloween%20-%20House%20of%20Blues%20Boston&mode=public">RSVP Publicly</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="genre-anchor-group" id="classical">
+              <div class="date-bar">Classical</div>
+
+              <article class="event-card">
+                <img class="event-thumb" src="https://images.unsplash.com/photo-1503293962593-47247718e6d2?auto=format&fit=crop&w=900&q=80" alt="Lang Lang Plays Grieg with BSO" />
+                <div class="event-info">
+                  <h3>Lang Lang Plays Grieg with BSO <span class="verified-badge">✔</span></h3>
+                  <div class="event-meta">Wednesday, April 8 • Show 7:30 PM | Symphony Hall</div>
+                  <div class="event-submeta">
+                    <span>Classical</span>
+                    <span class="small-tag">Main act 7:30 PM</span>
+                  </div>
+                  <div class="link-row">
+                    <a class="inline-link" href="https://www.bso.org/events" target="_blank">Tickets</a>
+                    <a class="inline-link" href="https://www.langlangofficial.com/" target="_blank">Artist</a>
+                    <a class="inline-link" href="https://www.youtube.com/results?search_query=Lang+Lang+official+performance" target="_blank">Music</a>
+                    <a class="inline-link" href="https://www.bso.org/events" target="_blank">Venue</a>
+                  </div>
+                </div>
+                <div class="event-actions">
+                  <a class="btn btn-red btn-event" href="https://www.bso.org/events" target="_blank">View Event</a>
+                  <a class="btn btn-soft btn-event" href="rsvp.html?event=Lang%20Lang%20Plays%20Grieg%20with%20BSO%20-%20Symphony%20Hall&mode=anonymous">RSVP Anonymously</a>
+                  <a class="btn btn-outline-dark btn-event" href="rsvp.html?event=Lang%20Lang%20Plays%20Grieg%20with%20BSO%20-%20Symphony%20Hall&mode=public">RSVP Publicly</a>
+                </div>
+              </article>
+            </div>
+
+            <section class="events-section" id="all-events" style="padding:0; margin-top:28px; box-shadow:none; background:transparent;">
+              <div class="section-heading">
+                <div>
+                  <h2>All Events by Date</h2>
+                  <span>Full calendar view</span>
+                </div>
               </div>
 
-              <article class="event-card"><div class="event-info"><h3>Lala Lala</h3><div class="event-meta">Tuesday, April 14 • Doors 7:00 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-              <article class="event-card"><div class="event-info"><h3>GoldFord</h3><div class="event-meta">Wednesday, April 15 • Doors 7:00 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-              <article class="event-card"><div class="event-info"><h3>Powfu</h3><div class="event-meta">Thursday, April 16 • Doors 7:00 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-              <article class="event-card"><div class="event-info"><h3>Krooked Kings</h3><div class="event-meta">Friday, April 17 • Doors 7:00 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-              <article class="event-card"><div class="event-info"><h3>The Glitter Boys</h3><div class="event-meta">Friday, April 17 • Doors 9:30 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-              <article class="event-card"><div class="event-info"><h3>Bearly Dead</h3><div class="event-meta">Saturday, April 18 • Doors 7:00 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-              <article class="event-card"><div class="event-info"><h3>Heavenly</h3><div class="event-meta">Sunday, April 19 • Doors 7:00 PM • The Sinclair</div><div class="link-row"><a class="inline-link" href="https://www.sinclaircambridge.com/events" target="_blank">Venue</a></div></div><div class="event-actions"><a class="btn btn-red btn-event" href="https://www.sinclaircambridge.com/events" target="_blank">View</a></div></article>
-            </section>
-
-            <section class="genre-block" id="middle-east">
-              <div class="genre-block-header">
-                <h3>Middle East / Sonia</h3>
-                <p>Current Cambridge listings surfaced for Sonia, Middle East Upstairs, and Downstairs.</p>
+              <div class="date-group">
+                <div class="date-bar">Tuesday, April 7</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>Live Jazz Dinner Set</strong> • The Beehive • Jazz</div>
+                  <div class="mini-item"><strong>Jonathan Butler</strong> • City Winery Boston • R&amp;B</div>
+                </div>
               </div>
 
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Camping in Alaska, Dead Butterflies, Sue, Awnthay <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 14 • 6:30 PM • Sonia</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://mideastclub.com/sonia/" target="_blank">Venue</a>
-                  </div>
+              <div class="date-group">
+                <div class="date-bar">Wednesday, April 8</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>Accusefive</strong> • Roadrunner • Pop</div>
+                  <div class="mini-item"><strong>Machine Girl</strong> • Royale • Electronic</div>
+                  <div class="mini-item"><strong>Lang Lang Plays Grieg with BSO</strong> • Symphony Hall • Classical</div>
                 </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://mideastclub.com/sonia/" target="_blank">View</a></div>
-              </article>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Fantastic Cat, Jillette Johnson <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 14 • 7:00 PM • Middle East Upstairs</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://mideastclub.com/upstairs/" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://mideastclub.com/upstairs/" target="_blank">View</a></div>
-              </article>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>South Pleasant Revival, Ice Lemonade and the Apple Snaps, Caramia and The Breakdown, Nicole Dobberpuhl <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Wednesday, April 15 • 7:00 PM • Middle East Upstairs</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://mideastclub.com/upstairs/" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://mideastclub.com/upstairs/" target="_blank">View</a></div>
-              </article>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>The Amplify'd Series Presents: SOUL x Asim Azhar <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Saturday, April 18 • 6:00 PM • Middle East Downstairs</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://mideastclub.com/calendar/" target="_blank">Venue Calendar</a>
-                  </div>
-                </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://mideastclub.com/calendar/" target="_blank">View</a></div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="royale">
-              <div class="genre-block-header">
-                <h3>Royale</h3>
-                <p>Two current shows inside your Tuesday to Sunday window.</p>
               </div>
 
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>The Growlers <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • 7:00 PM • Royale</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Venue</a>
-                  </div>
+              <div class="date-group">
+                <div class="date-bar">Friday, April 10</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>LANY</strong> • Roadrunner • Pop</div>
+                  <div class="mini-item"><strong>Bridget Everett</strong> • MGM Music Hall • Pop</div>
+                  <div class="mini-item"><strong>Circle Jerks &amp; Gorilla Biscuits</strong> • Paradise Rock Club • Rock</div>
                 </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://royaleboston.com/events/list/" target="_blank">View</a></div>
-              </article>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Starjunk 95 <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Friday, April 17 • 6:00 PM to 10:00 PM • Royale</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://royaleboston.com/events/list/" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://royaleboston.com/events/list/" target="_blank">View</a></div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="bpc">
-              <div class="genre-block-header">
-                <h3>Berklee Performance Center</h3>
-                <p>Current BPC listings surfaced inside your date window.</p>
               </div>
 
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>The Prince Project <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • 8:00 PM • Berklee Performance Center</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.berklee.edu/BPC/full-calendar-of-events-at-the-bpc" target="_blank">Tickets / Venue</a>
-                  </div>
+              <div class="date-group">
+                <div class="date-bar">Saturday, April 11</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>Niko Moon</strong> • House of Blues Boston • Pop</div>
                 </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.berklee.edu/BPC/full-calendar-of-events-at-the-bpc" target="_blank">View</a></div>
-              </article>
-
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Nobody Asked Us with Des Linden and Kara Goucher <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Saturday, April 18 • 6:00 PM • Berklee Performance Center</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.berklee.edu/BPC" target="_blank">Venue</a>
-                  </div>
-                </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.berklee.edu/BPC" target="_blank">View</a></div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="cafe939">
-              <div class="genre-block-header">
-                <h3>Red Room at Cafe 939</h3>
-                <p>A clearly surfaced Berklee room event inside your date window.</p>
               </div>
 
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Songs for Social Change <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Thursday, April 16 • 7:00 PM • Red Room at Cafe 939</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://www.berklee.edu/cafe939" target="_blank">Venue</a>
-                  </div>
+              <div class="date-group">
+                <div class="date-bar">Sunday, April 12</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>Bush</strong> • MGM Music Hall • Rock</div>
                 </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://www.berklee.edu/cafe939" target="_blank">View</a></div>
-              </article>
-            </section>
-
-            <section class="genre-block" id="big-night-live">
-              <div class="genre-block-header">
-                <h3>Big Night Live</h3>
-                <p>A clearly surfaced Tuesday show in the venue’s Boston event feed.</p>
               </div>
 
-              <article class="event-card">
-                <div class="event-info">
-                  <h3>Queen Naija <span class="verified-badge">✔</span></h3>
-                  <div class="event-meta">Tuesday, April 14 • 7:00 PM • Big Night Live</div>
-                  <div class="link-row">
-                    <a class="inline-link" href="https://bignightlive.com/" target="_blank">Venue</a>
-                  </div>
+              <div class="date-group">
+                <div class="date-bar">Wednesday, April 15</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>Helloween</strong> • House of Blues Boston • Metal</div>
                 </div>
-                <div class="event-actions"><a class="btn btn-red btn-event" href="https://bignightlive.com/" target="_blank">View Event</a></div>
-              </article>
+              </div>
+
+              <div class="date-group">
+                <div class="date-bar">Friday, April 17</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>HEALTH x CARPENTER BRUT</strong> • House of Blues Boston • Electronic</div>
+                </div>
+              </div>
+
+              <div class="date-group">
+                <div class="date-bar">Saturday, April 18</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>I LOVE YOU BUT... I CHOSE THE MAINE</strong> • House of Blues Boston • Rock</div>
+                </div>
+              </div>
+
+              <div class="date-group">
+                <div class="date-bar">Tuesday, April 21</div>
+                <div class="mini-list">
+                  <div class="mini-item"><strong>Jae Stephens</strong> • Brighton Music Hall • R&amp;B</div>
+                </div>
+              </div>
             </section>
           </section>
         </div>
@@ -616,69 +485,54 @@
         <aside class="sidebar sponsor-sidebar">
           <div class="sponsor-heading">
             <div>
-              <div class="sponsor-label-top">Near the show</div>
-              <h2>Make a full night out of it</h2>
-              <p>Nearby spots that make the event experience feel more complete.</p>
+              <div class="sponsor-label-top">SPONSORED</div>
+              <h2>Nearby Spots for Concertgoers</h2>
+              <p>Hotels and restaurants close to the rooms people are actually going to.</p>
             </div>
           </div>
 
           <article class="business-card sponsor-card premium">
-            <div class="sponsor-badge">Featured</div>
+            <div class="sponsor-badge">Sponsored</div>
             <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Hotel Commonwealth" />
             <div class="business-body">
               <h3>Hotel Commonwealth</h3>
-              <p class="business-location">Near Fenway venues</p>
-              <p>Great for out-of-town concertgoers staying close to major Boston music spots.</p>
+              <p class="business-location">Near MGM Music Hall &amp; House of Blues</p>
+              <p>Strong Fenway option for visitors staying close to bigger shows.</p>
               <div class="business-tags-row">
-                <span class="business-tag">Hotel</span>
                 <span class="business-tag">Fenway</span>
+                <span class="business-tag">Hotel</span>
               </div>
-              <a href="https://www.hotelcommonwealth.com/" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
+              <a href="https://www.google.com/search?q=Hotel+Commonwealth+Boston" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
             </div>
           </article>
 
           <article class="business-card sponsor-card">
-            <div class="sponsor-badge">Featured</div>
-            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="The Friendly Toast" />
-            <div class="business-body">
-              <h3>The Friendly Toast</h3>
-              <p class="business-location">Back Bay</p>
-              <p>A casual option before a show if you want food without overcomplicating the night.</p>
-              <div class="business-tags-row">
-                <span class="business-tag">Restaurant</span>
-                <span class="business-tag">Pre-show</span>
-              </div>
-              <a href="https://www.thefriendlytoast.com/" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
-            </div>
-          </article>
-
-          <article class="business-card sponsor-card">
-            <div class="sponsor-badge">Featured</div>
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="SRV restaurant" />
-            <div class="business-body">
-              <h3>SRV</h3>
-              <p class="business-location">South End</p>
-              <p>A stronger dinner option if the show is part of a more planned night out.</p>
-              <div class="business-tags-row">
-                <span class="business-tag">Restaurant</span>
-                <span class="business-tag">South End</span>
-              </div>
-              <a href="https://www.srvboston.com/" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
-            </div>
-          </article>
-
-          <article class="business-card sponsor-card">
-            <div class="sponsor-badge">Featured</div>
+            <div class="sponsor-badge">Sponsored</div>
             <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80" alt="The Verb Hotel" />
             <div class="business-body">
               <h3>The Verb Hotel</h3>
-              <p class="business-location">Fenway</p>
-              <p>A music-forward hotel that fits the project better than a generic listing.</p>
+              <p class="business-location">Near Fenway venues</p>
+              <p>Music-friendly hotel close to major touring rooms.</p>
               <div class="business-tags-row">
+                <span class="business-tag">Fenway</span>
                 <span class="business-tag">Hotel</span>
-                <span class="business-tag">Music vibe</span>
               </div>
-              <a href="https://www.theverbhotel.com/" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
+              <a href="https://www.google.com/search?q=The+Verb+Hotel+Boston" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
+            </div>
+          </article>
+
+          <article class="business-card sponsor-card">
+            <div class="sponsor-badge">Sponsored</div>
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="The Friendly Toast" />
+            <div class="business-body">
+              <h3>The Friendly Toast</h3>
+              <p class="business-location">Near Back Bay and Berklee venues</p>
+              <p>Good pre-show stop for Berklee Performance Center and Cafe 939 nights.</p>
+              <div class="business-tags-row">
+                <span class="business-tag">Back Bay</span>
+                <span class="business-tag">Restaurant</span>
+              </div>
+              <a href="https://www.google.com/search?q=The+Friendly+Toast+Boston" target="_blank" class="btn btn-dark btn-small">Visit Website</a>
             </div>
           </article>
         </aside>
