@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add Event | Boston Music Radar</title>
+  <title>Boston Music Radar | Add Event</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -25,18 +25,17 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#" class="btn btn-red btn-small">Log In</a>
-        <a href="#" class="btn btn-outline btn-small">Sign Up</a>
+        <a href="events.html" class="btn btn-outline btn-small">Events</a>
+        <a href="venues.html" class="btn btn-red btn-small">Venues</a>
       </div>
     </div>
   </header>
 
-  <main class="page-shell">
-    <section class="page-hero page-hero-small">
+  <main>
+    <section class="page-hero">
       <div class="container">
-        <div class="hero-kicker">Submission system</div>
-        <h1>Add Event</h1>
-        <p>Paid submissions help reduce spam and keep listings more reliable.</p>
+        <h1>Submit an Event</h1>
+        <p>Share a real show with Boston Music Radar.</p>
       </div>
     </section>
 
@@ -44,141 +43,97 @@
       <div class="container submission-layout">
         <div class="form-card">
           <div class="form-intro">
-            <span class="pill-note">Review required</span>
-            <h2>Submit a show for review</h2>
+            <span class="pill-note">Submission form</span>
+            <h2>Add your event</h2>
             <p>
-              Boston Music Radar accepts paid event submissions from venues, promoters, artists, and individuals.
-              All listings are reviewed before going live.
+              To keep the site cleaner and reduce spam, all submissions are reviewed before they go live.
+              Verified venues and approved promoters receive priority review.
             </p>
           </div>
 
-          <div class="price-cards">
-            <div class="price-card featured">
-              <div class="price-tag">Recommended</div>
-              <h3>Verified Venue / Promoter</h3>
-              <div class="price">$25</div>
-              <p>Faster review for official venue and approved promoter submissions.</p>
-            </div>
+          <form class="form-grid">
+            <label>
+              Artist or Event Name
+              <input type="text" placeholder="The Timba Messengers" />
+            </label>
 
-            <div class="price-card">
-              <h3>Band / Artist / Individual</h3>
-              <div class="price">$15</div>
-              <p>Paid listing to help reduce spam and keep the calendar cleaner.</p>
-            </div>
-          </div>
+            <label>
+              Genre
+              <select>
+                <option>Choose a genre</option>
+                <option>Latin</option>
+                <option>Indie</option>
+                <option>Pop</option>
+                <option>Classical</option>
+                <option>Folk</option>
+                <option>Jazz</option>
+              </select>
+            </label>
 
-          <form class="event-form">
-            <div class="form-grid">
-              <label>
-                Artist / Act
-                <input type="text" name="artist" />
-              </label>
+            <label>
+              Venue
+              <input type="text" placeholder="The Beehive" />
+            </label>
 
-              <label>
-                Venue
-                <input type="text" name="venue" />
-              </label>
+            <label>
+              Neighborhood / Area
+              <input type="text" placeholder="South End" />
+            </label>
 
-              <label>
-                Date
-                <input type="date" name="date" />
-              </label>
+            <label>
+              Date
+              <input type="date" />
+            </label>
 
-              <label>
-                Doors Time
-                <input type="text" name="doors" placeholder="7:00 PM" />
-              </label>
+            <label>
+              Time
+              <input type="time" />
+            </label>
 
-              <label>
-                Show Time
-                <input type="text" name="show" placeholder="8:00 PM" />
-              </label>
+            <label>
+              Ticket Link
+              <input type="url" placeholder="https://..." />
+            </label>
 
-              <label>
-                Main Act Start
-                <input type="text" name="mainAct" placeholder="9:15 PM or TBA" />
-              </label>
+            <label>
+              Artist Website or Instagram
+              <input type="url" placeholder="https://..." />
+            </label>
 
-              <label>
-                Genre
-                <select name="genre">
-                  <option>Select genre</option>
-                  <option>Rock</option>
-                  <option>Hip-Hop</option>
-                  <option>Jazz</option>
-                  <option>Pop</option>
-                  <option>Electronic</option>
-                  <option>R&B</option>
-                  <option>Folk</option>
-                  <option>Metal</option>
-                  <option>Latin</option>
-                  <option>Classical</option>
-                </select>
-              </label>
+            <label class="full-width">
+              Event Description
+              <textarea placeholder="Tell people what kind of night this is and why it’s worth going."></textarea>
+            </label>
 
-              <label>
-                Submission Type
-                <select name="submissionType">
-                  <option>Verified Venue / Promoter</option>
-                  <option>Band / Artist / Individual</option>
-                </select>
-              </label>
-
-              <label>
-                Age Restriction
-                <input type="text" name="age" placeholder="21+ / All Ages" />
-              </label>
-
-              <label>
-                Contact Email
-                <input type="email" name="email" placeholder="name@email.com" />
-              </label>
-
-              <label class="full-width">
-                Event / Ticket Link
-                <input type="url" name="eventUrl" placeholder="https://..." />
-              </label>
-
-              <label class="full-width">
-                Artist Website Link
-                <input type="url" name="artistUrl" placeholder="https://..." />
-              </label>
-
-              <label class="full-width">
-                Venue Website Link
-                <input type="url" name="venueUrl" placeholder="https://..." />
-              </label>
-
-              <label class="full-width">
-                Notes
-                <textarea rows="4" placeholder="Optional notes"></textarea>
-              </label>
-            </div>
-
-            <div class="form-actions form-actions-split">
-              <button type="submit" class="btn btn-red">Continue to Payment</button>
-              <span class="form-note">Static version for now. Later this can connect to payment and moderation.</span>
-            </div>
+            <label class="full-width">
+              Venue Website
+              <input type="url" placeholder="https://..." />
+            </label>
           </form>
+
+          <div class="form-actions-split">
+            <div class="form-note">Submissions are reviewed before publishing.</div>
+            <a href="#" class="btn btn-red">Submit Event</a>
+          </div>
         </div>
 
         <aside class="submission-sidebar">
           <div class="sidebar-panel">
-            <span class="pill-note">Why paid?</span>
-            <h3>Cleaner calendar</h3>
-            <p>Charging a listing fee helps filter out spammy posts and low-quality submissions.</p>
+            <span class="pill-note">Posting policy</span>
+            <h3>Keep it real</h3>
+            <p>
+              Boston Music Radar works best when listings are real, current, and linked to an actual artist or venue page.
+            </p>
           </div>
 
           <div class="sidebar-panel">
-            <span class="pill-note">Priority</span>
-            <h3>Verified venues first</h3>
-            <p>Official venues and approved promoters can get faster review and stronger trust on the platform.</p>
-          </div>
-
-          <div class="sidebar-panel">
-            <span class="pill-note">Goal</span>
-            <h3>Keep it music-first</h3>
-            <p>The point is to make discovery easier, not flood the site with random posts.</p>
+            <span class="pill-note">What gets approved faster</span>
+            <div class="mini-list">
+              <div class="mini-item">Official venue link</div>
+              <div class="mini-item">Artist website or social page</div>
+              <div class="mini-item">Clear date and time</div>
+              <div class="mini-item">Short useful description</div>
+            </div>
           </div>
         </aside>
       </div>
